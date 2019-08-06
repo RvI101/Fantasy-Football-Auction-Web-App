@@ -14,7 +14,6 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { HomeComponent } from './home/home.component';
 import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
 import { LeagueHomeComponent } from './league/league-home/league-home.component';
 import { LeagueCreateComponent } from './league/league-create/league-create.component';
@@ -38,7 +37,6 @@ import { RulesComponent } from './rules/rules.component';
     LoginComponent,
     PlayerListComponent,
     SquadListComponent,
-    HomeComponent,
     LeagueHomeComponent,
     LeagueCreateComponent,
     LeagueJoinComponent,

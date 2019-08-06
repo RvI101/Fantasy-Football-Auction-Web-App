@@ -1,23 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="#">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="/leagues">Leagues <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" routerLink="/players">Players</a>
+        <a class="nav-item nav-link" routerLink="/rules">Rules</a>
+        </div>
+    </div>
+</nav>
 <section class="container-fluid">
-<div style="text-align:center" class="row justify-content-center">
-    <h1>
-        Welcome to {{ title }}!
-    </h1>
-</div>
-<app-login class="row justify-content-start"></app-login>
-<hr>
-<div class="btn-group btn-group-toggle row" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
-    <label ngbButtonLabel class="btn-primary">
-        <input ngbButton type="radio" [value]="1" routerLink="/leagues"> My Leagues
-    </label>
-    <label ngbButtonLabel class="btn-primary">
-        <input ngbButton type="radio" value="middle" routerLink="/players"> Players
-    </label>
-    <label ngbButtonLabel class="btn-primary">
-        <input ngbButton type="radio" [value]="false" routerLink="/rules"> Rules
-    </label>
-</div>
-<hr>
+    <app-login class="row justify-content-end"></app-login>
+    <hr>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </section>
