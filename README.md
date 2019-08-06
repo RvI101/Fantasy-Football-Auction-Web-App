@@ -1,27 +1,10 @@
-# FootballAuction
+# Fantasy Football Auction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+This is solely an auction facilitator for a group of friends and not a fantasy team site. It does not track fantasy points.
+You can create a League and then invite your friends. There is no hard limit on the number of players, so use your judgement.
+You then place bids for 15 players. Once everyone has placed their bids, the League Creator will be able to Resolve Bids from his League Hub.
+The highest bidder for a player gets the player. In the event of a tie, the winning bid is randomly chosen for convenience. Bidding phases will continue until all players have gotten 15 players.
+Once your team has been assembled, please use your fantasy football website of choice to track your fantasy points.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This can be forked by anyone and seamlessly used for any team list they possess. Simply replace playerStore.json with your own json data of players.
