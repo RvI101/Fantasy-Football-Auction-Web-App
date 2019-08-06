@@ -1,0 +1,9 @@
+<section *ngIf="resBids$ | async as bids">
+    <h5>Squad</h5>
+    <ul class="list-group list-group-flush" *ngFor="let item of bids">
+        <li class="list-group-item">
+            {{ item.name }} &#183; {{ getShortHandPosition(item.player.position) }} &#183; {{ item.player.team }} &#183;
+            {{ item.amount | currency:'GBP':'symbol':'1.0-1'}}M
+        </li>
+    </ul>
+</section>

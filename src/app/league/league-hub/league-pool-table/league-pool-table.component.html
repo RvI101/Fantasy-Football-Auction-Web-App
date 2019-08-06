@@ -1,0 +1,32 @@
+<section class="container-fluid">
+    <h4 *ngIf="selectedTeam" class="row">{{selectedTeam}} Squad!</h4>
+    <form class="row">
+        <table class="table table-borderless table-sm">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Bid</th>
+                    <th scope="col">Scratch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let player of visiblePlayers$ | async; let i=index;">
+                    <td>{{ i+1 }}</td>
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.position }}</td>
+                    <td>
+                        <div class="input-group mb-3 col-7">
+                            <input type="number" [(ngModel)]="bidAmounts[i]" min="1"  max="999" name="amount" class="form-control" placeholder="£M" aria-label="Bid Amount" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button (click)="markBid(player, bidAmounts[i])" class="btn btn-outline-secondary" type="button" id="button-addon2">Mark Bid</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{ bidAmounts[i] | currency:'GBP'}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</section>

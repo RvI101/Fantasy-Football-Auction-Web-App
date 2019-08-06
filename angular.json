@@ -113,8 +113,13 @@
               "devServerTarget": "football-auction:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "football-auction"
 }

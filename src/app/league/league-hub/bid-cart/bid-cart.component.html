@@ -1,0 +1,30 @@
+<!-- <img src="../../../../assets/auction.svg" height="64" alt="Auction Gavel"/> -->
+<section class="my-md-2" *ngIf="(tentativeBids | async) as bids">
+
+        <ngb-alert [dismissible]="false" type="info">
+            <strong>Marked Bids</strong> - {{ bids.length }}/{{ squadSpace }} bids marked.
+        </ngb-alert>
+        <ngb-alert [dismissible]="false" type="danger" *ngIf="hasDuplicate">
+            Error! You have multiple bids for the same player.
+        </ngb-alert>
+        <section>
+            <ngb-alert [dismissible]="false" type="danger" *ngIf="belowThreshold(balance)">
+                You do not have enough money for these bids!
+            </ngb-alert>
+            <div class="my-md-3">
+                <span [ngClass]="belowThreshold(balance)?'bg-danger':'bg-success'" class="rounded-pill p-2">
+                    {{balance | currency:'GBP':'symbol':'1.0-1'}}M
+                </span>
+            </div>
+        </section>
+    <div class="list-group my-md-2" *ngFor="let item of bids">
+        <button class="list-group-item list-group-item-action" (click)="removeBid(item)" placement="left" ngbTooltip="Click to delete">
+            <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1">{{ item.name }}</p>
+                <small>{{ item.amount | currency:'GBP':'symbol':'1.0-1'}}M</small>
+            </div>
+            <small class="mb-1">{{ item.player.position }} - {{ item.player.team }}</small>
+        </button>
+    </div>
+    <button *ngIf="isComplete && !belowThreshold(balance) && squadSpace > 0" class="btn btn-success my-md-3" (click)="submitBids(bids)">Submit</button>
+</section>

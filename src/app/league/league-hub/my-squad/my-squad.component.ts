@@ -1,0 +1,28 @@
+import { Component, OnInit, Input } from '@angular/core';
+import { StoreService } from 'src/app/store.service';
+import { Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-my-squad',
+  templateUrl: './my-squad.component.html',
+  styleUrls: ['./my-squad.component.css']
+})
+export class MySquadComponent implements OnInit {
+  @Input() leagueId: string;
+  resBids$: Observable<any[]>;
+  constructor(private store: StoreService) { }
+
+  ngOnInit() {
+    this.resBids$ = this.store.getResolvedBids(this.leagueId);
+  }
+
+  getShortHandPosition(position: string): string {
+    if (position.includes('Back')) {
+      return 'DEF';
+    } else if (position.includes('Midfield')) {
+      return 'MID';
+    } else {
+      return 'FWD';
+    }
+  }
+}

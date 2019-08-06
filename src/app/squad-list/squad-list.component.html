@@ -1,0 +1,24 @@
+<h4 *ngIf="selectedTeam">{{selectedTeam}} Squad!</h4>
+<table *ngIf="selectedTeam" class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Position</th>
+            <!-- <th scope="col">Status</th>
+            <th scope="col">Bid</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let player of players">
+            <td>{{player.name}}</td>
+            <td>{{player.position}}</td>
+            <!-- <td>Available</td>
+            <td>
+                <input type="number" placeholder="Amount" class="form-control col-4">
+                <button type="button" class="btn-primary col-4">
+                    Bid
+                </button>
+            </td> -->
+        </tr>
+    </tbody>
+</table>
