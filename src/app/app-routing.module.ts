@@ -8,9 +8,11 @@ import { LeaguePoolComponent } from './league/league-hub/league-pool/league-pool
 import { LeagueAdminConsoleComponent } from './league/league-hub/league-admin-console/league-admin-console.component';
 import { IsLeagueAdminGuard } from './guards/is-league-admin.guard';
 import { RulesComponent } from './rules/rules.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'players', component: PlayerListComponent, canActivate: [AngularFireAuthGuard]},
   {path: 'leagues', component: LeagueComponent, canActivate: [AngularFireAuthGuard]},
   {path: 'leagues/:id', component: LeagueHubComponent, canActivate: [AngularFireAuthGuard], children: [

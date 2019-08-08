@@ -1,8 +1,8 @@
-<div *ngIf="afAuth.user | async as user; else showLogin">
+<div *ngIf="afAuth.user | async as user; else showLogin" class="p-3 my-2">
     <h4>Hello, {{ firstWord(user.displayName) }}!</h4>
     <button (click)="logout()" class="btn btn-outline-danger">Logout</button>
 </div>
-<ng-template #showLogin>
+<ng-template class="p-3 my-2" #showLogin>
     <p>Please login to access information.</p>
     <button (click)="login()" class="btn btn-outline-primary">Log in with Google</button>
 </ng-template>

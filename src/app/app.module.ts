@@ -27,6 +27,7 @@ import { MySquadComponent } from './league/league-hub/my-squad/my-squad.componen
 import { BidHistoryComponent } from './league/league-hub/bid-history/bid-history.component';
 import { LeagueAdminConsoleComponent } from './league/league-hub/league-admin-console/league-admin-console.component';
 import { RulesComponent } from './rules/rules.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { RulesComponent } from './rules/rules.component';
     BidHistoryComponent,
     LeagueAdminConsoleComponent,
     RulesComponent,
+    HomeComponent,
   ],
   imports: [
     NgbModule,
