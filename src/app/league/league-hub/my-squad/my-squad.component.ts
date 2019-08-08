@@ -17,9 +17,11 @@ export class MySquadComponent implements OnInit {
   }
 
   getShortHandPosition(position: string): string {
-    if (position.includes('Back')) {
+    if (position.includes('Goalkeeper')) {
+      return 'GK';
+    } else if (position.includes('Defender')) {
       return 'DEF';
-    } else if (position.includes('Midfield')) {
+    } else if (position.includes('Midfielder')) {
       return 'MID';
     } else {
       return 'FWD';
