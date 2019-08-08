@@ -8,3 +8,5 @@ Once your team has been assembled, please use your fantasy football website of c
 
 
 This can be forked by anyone and seamlessly used for any team list they possess. Simply replace playerStore.json with your own json data of players.
+
+Demo here : https://football-auction.firebaseapp.com/
