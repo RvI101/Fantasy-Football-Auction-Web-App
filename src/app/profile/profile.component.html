@@ -1,0 +1,8 @@
+<h4>Display Name</h4>
+<label>Your Display Name is currently <strong>{{displayName$ | async}}</strong></label>
+<hr>
+<input type="text" [(ngModel)]="this.newName" placeholder="New Display Name" class="form-control ml-2">
+<hr>
+<button (click)="changeDisplayName(this.newName)" class="btn btn-outline-primary">Submit</button>
+
+<app-toast-container></app-toast-container>

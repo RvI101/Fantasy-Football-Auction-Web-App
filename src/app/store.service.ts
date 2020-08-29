@@ -115,6 +115,20 @@ export class StoreService {
       );
   }
 
+  getUserDisplayName(userId?: string): Observable<string> {
+    if (userId) {
+      return this.db.object(`users/${userId}/displayName`).valueChanges()
+      .pipe(map(dpName => dpName as string));
+    } else {
+      return this.db.object(`users/${this.uid}/displayName`).valueChanges()
+        .pipe(map(dpName => dpName as string));
+    }
+  }
+
+  setUserDisplayName(displayName: string): void {
+    this.db.object(`users/${this.uid}/displayName`).set(displayName);
+  }
+
   getUserStatus(leagueId: string): Observable<any> {
     return this.db.object(`users/${this.uid}/leagues/${leagueId}/status`).valueChanges();
   }

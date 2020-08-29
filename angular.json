@@ -121,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "football-auction"
+  "defaultProject": "football-auction",
+  "cli": {
+    "analytics": "4c80d9ca-c3e3-4688-964b-9bc353d211d3"
+  }
 }

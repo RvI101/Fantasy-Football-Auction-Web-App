@@ -9,6 +9,7 @@ import { LeagueAdminConsoleComponent } from './league/league-hub/league-admin-co
 import { IsLeagueAdminGuard } from './guards/is-league-admin.guard';
 import { RulesComponent } from './rules/rules.component';
 import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: 'leagues/:id', component: LeagueHubComponent, canActivate: [AngularFireAuthGuard], children: [
     {path: 'admin', component: LeagueAdminConsoleComponent, canActivate: [IsLeagueAdminGuard]}
   ]},
-  {path: 'rules', component: RulesComponent}
+  {path: 'rules', component: RulesComponent},
+  {path: 'profile', component: ProfileComponent}
 ];
 
 @NgModule({

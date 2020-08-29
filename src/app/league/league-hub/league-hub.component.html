@@ -10,14 +10,14 @@
                     <tr>
                         <th scope="col">Name</th>
                         <th scope="col">Actions</th>
-                        <th *ngIf="isAdmin" scope="col">Status</th>
+                        <th scope="col">Status</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let member of L.members">
-                        <td>{{member.slice(-4)}}</td>
+                    <tr *ngFor="let member of memberMap | keyvalue">
+                        <td>{{member.value.displayName !== null ? member.value.displayName : member.key.slice(-4)}}</td>
                         <td><button class="btn btn-outline-primary">View</button></td>
-                        <td *ngIf="isAdmin">{{ (memberMap[member])?.status.toUpperCase() }}</td>
+                        <td>{{ (member.value)?.status.toUpperCase() }}</td>
                     </tr>
                 </tbody>
             </table>

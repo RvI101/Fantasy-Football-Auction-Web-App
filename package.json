@@ -13,7 +13,6 @@
   "dependencies": {
     "@angular/animations": "~8.1.0",
     "@angular/common": "~8.1.0",
-    "@angular/compiler": "~8.1.0",
     "@angular/core": "~8.1.0",
     "@angular/fire": "^5.2.1",
     "@angular/forms": "~8.1.0",
@@ -31,8 +30,9 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.801.0",
+    "@angular-devkit/build-angular": "^0.801.0",
     "@angular/cli": "~8.1.0",
+    "@angular/compiler": "^8.1.3",
     "@angular/compiler-cli": "~8.1.0",
     "@angular/language-service": "~8.1.0",
     "@types/jasmine": "~3.3.8",
@@ -40,7 +40,7 @@
     "@types/node": "~8.9.4",
     "angular-ide": "^0.9.63",
     "codelyzer": "^5.0.0",
-    "jasmine-core": "~3.4.0",
+    "jasmine-core": "^3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
     "karma-chrome-launcher": "~2.2.0",
@@ -50,11 +50,6 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3",
-    "@angular-devkit/architect": "<0.900 || ^0.900.0-0 || ^9.0.0-0",
-    "firebase-tools": "^6.10.0",
-    "fuzzy": "^0.1.3",
-    "inquirer": "^6.2.2",
-    "inquirer-autocomplete-prompt": "^1.0.1"
+    "typescript": "^3.4.5"
   }
 }

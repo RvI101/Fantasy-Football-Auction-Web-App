@@ -28,6 +28,8 @@ import { BidHistoryComponent } from './league/league-hub/bid-history/bid-history
 import { LeagueAdminConsoleComponent } from './league/league-hub/league-admin-console/league-admin-console.component';
 import { RulesComponent } from './rules/rules.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { HomeComponent } from './home/home.component';
     LeagueAdminConsoleComponent,
     RulesComponent,
     HomeComponent,
+    ProfileComponent,
   ],
   imports: [
     NgbModule,
@@ -61,7 +64,8 @@ import { HomeComponent } from './home/home.component';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFireAuthGuardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

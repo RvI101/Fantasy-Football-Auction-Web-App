@@ -3,7 +3,7 @@ import { Bid } from './bid';
 export class Player {
     id: number = null;
     name: string = null;
-    position: string = null;
+    position: number = null;
     status = 'Available';
     bids: any = {};
     jerseyNumber: number = null;
@@ -11,14 +11,9 @@ export class Player {
     nationality: string = null;
     owner: string = null;
     cost: number = null;
+    team: string = null;
 
-    constructor(private jsonData?, public team?: string) {
-        if (team) {
-            this.team = team;
-        } else {
-            this.team = null;
-        }
-
+    constructor(private jsonData?) {
         if (jsonData) {
             this.deserialize(jsonData);
             this.jsonData = null;
@@ -33,6 +28,12 @@ export class Player {
             if (jsonData.hasOwnProperty(key)) {
                 this[key] = jsonData[key];
             }
+        }
+        if (jsonData.hasOwnProperty('web_name')) {
+            this.name = jsonData['web_name'];
+        }
+        if (jsonData.hasOwnProperty('element_type')) {
+            this.position = jsonData['element_type'];
         }
     }
 }
