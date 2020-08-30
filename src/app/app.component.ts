@@ -9,6 +9,7 @@ import { AngularFireDatabase, AngularFireObject } from '@angular/fire/database';
 })
 export class AppComponent {
   title = 'Football Auction';
+  public isMenuCollapsed = true;
   usersRef: AngularFireObject<any>;
 
   constructor(public afAuth: AngularFireAuth, private db: AngularFireDatabase) {
