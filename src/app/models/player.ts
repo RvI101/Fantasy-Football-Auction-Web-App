@@ -1,9 +1,14 @@
 import { Bid } from './bid';
-
+enum Position {
+    GK = 1,
+    DEF,
+    MID,
+    FWD
+}
 export class Player {
     id: number = null;
     name: string = null;
-    position: number = null;
+    position: string = null;
     status = 'Available';
     bids: any = {};
     jerseyNumber: number = null;
@@ -11,7 +16,7 @@ export class Player {
     nationality: string = null;
     owner: string = null;
     cost: number = null;
-    team: string = null;
+    team: number = null;
 
     constructor(private jsonData?) {
         if (jsonData) {
@@ -20,7 +25,7 @@ export class Player {
         }
     }
 
-    private deserialize(jsonData: Player) {
+    private deserialize(jsonData: any) {
         // Note this.active will not be listed in keys since it's declared, but not defined
         const keys = Object.keys(this);
 
@@ -30,10 +35,11 @@ export class Player {
             }
         }
         if (jsonData.hasOwnProperty('web_name')) {
-            this.name = jsonData['web_name'];
+            this.name = jsonData.web_name;
         }
         if (jsonData.hasOwnProperty('element_type')) {
-            this.position = jsonData['element_type'];
+            this.position = Position[jsonData.element_type];
         }
+        this.status = 'Available';
     }
 }

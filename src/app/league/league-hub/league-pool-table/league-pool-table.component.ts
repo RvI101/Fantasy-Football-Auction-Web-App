@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Player } from 'src/app/models/player';
 import { filter, take, toArray, tap, scan } from 'rxjs/operators';
@@ -11,7 +11,7 @@ import { FormBuilder, FormArray, FormGroup } from '@angular/forms';
   styleUrls: ['./league-pool-table.component.css']
 })
 export class LeaguePoolTableComponent implements OnInit, OnChanges {
-  @Input() selectedTeam: string;
+  @Input() selectedTeam: number;
   @Input() players$: Observable<Player>;
   @Input() leagueId: string;
   visiblePlayers$: Observable<Player[]>;
@@ -21,7 +21,8 @@ export class LeaguePoolTableComponent implements OnInit, OnChanges {
 
   ngOnInit() { }
 
-  ngOnChanges() {
+  ngOnChanges(changes: SimpleChanges) {
+    console.log(`Selected Team : ${this.selectedTeam}`);
     this.visiblePlayers$ = this.players$.pipe(
       filter(p => ((p.team === this.selectedTeam) && this.isAvailable(p))),
       toArray()

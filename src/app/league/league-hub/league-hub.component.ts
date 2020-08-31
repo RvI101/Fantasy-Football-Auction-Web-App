@@ -38,6 +38,7 @@ export class LeagueHubComponent implements OnInit, OnDestroy {
     });
 
     this.league$ = this.route.paramMap.pipe(
+      takeUntil(this.unsubscribe$),
       switchMap((params: ParamMap) => this.store.getLeague(params.get('id'))),
       map(league => {
         league.members = [...Object.values(league.members)];
