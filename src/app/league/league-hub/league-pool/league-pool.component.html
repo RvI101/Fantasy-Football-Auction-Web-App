@@ -4,7 +4,7 @@
             <div ngbDropdown class="d-inline-block">
                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Choose a team</button>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                    <button ngbDropdownItem *ngFor="let team of getTeamKeys(teams)" (click)="onSelect(team)">{{teams[team]}}</button>
+                    <button ngbDropdownItem *ngFor="let team of getTeamKeys()" (click)="onSelect(team)">{{teams[team]}}</button>
                 </div>
             </div>
         </div>
