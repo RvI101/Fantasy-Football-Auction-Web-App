@@ -11,7 +11,7 @@ import { FormBuilder, FormArray, FormGroup } from '@angular/forms';
   styleUrls: ['./league-pool-table.component.css']
 })
 export class LeaguePoolTableComponent implements OnInit, OnChanges {
-  @Input() selectedTeam: number;
+  @Input() selectedTeam: any;
   @Input() players$: Observable<Player>;
   @Input() leagueId: string;
   visiblePlayers$: Observable<Player[]>;
@@ -22,9 +22,9 @@ export class LeaguePoolTableComponent implements OnInit, OnChanges {
   ngOnInit() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(`Selected Team : ${this.selectedTeam}`);
+    // console.log(`Selected Team : ${this.selectedTeam}`);
     this.visiblePlayers$ = this.players$.pipe(
-      filter(p => ((p.team === this.selectedTeam) && this.isAvailable(p))),
+      filter(p => (this.selectedTeam && (p.team === this.selectedTeam.id) && this.isAvailable(p))),
       toArray()
       );
     this.visiblePlayers$.subscribe(p => {

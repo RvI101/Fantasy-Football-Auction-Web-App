@@ -1,57 +1,47 @@
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { map, mergeMap, groupBy, toArray, tap } from 'rxjs/operators';
 import playersData from './playerStore.json';
 import { Player } from './models/player';
 import { HttpClient } from '@angular/common/http';
+import { Observable, zip, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class PlayerService {
   allUrl = 'http://localhost:4200/api/bootstrap-static/';
-  players: any = playersData.playerStore;
-  playerList: Player[] = [];
-  playerDict: any = {};
-  teams: string[] = [];
-  teamMap: any = {};
+  apiData$: Observable<any>;
   constructor(private http: HttpClient) {
-    http.get(this.allUrl)
-      .subscribe((data: any) => {
-        // this.teams = data['teams'].map(obj => obj.name);
-        this.teamMap = Object.assign({}, ...data.teams.map((tObj) => ({[tObj.id]: tObj.name})));
-        console.log(this.teamMap);
-        // console.log(this.teams);
-        this.playerList = data.elements;
-        this.playerList.forEach((p: any) => {
-          this.playerDict[p.id] = new Player(p);
-        });
-      });
+    this.apiData$ = http.get(this.allUrl);
   }
 
-  getPlayers(team: string): Player[] {
-    console.log(`GET players of team ${team} : ${this.players[team]}`)
-    if (!this.players[team]) {
-      return [];
-    }
-    return this.players[team].map((player: Player) => new Player(player));
+  public getTeamMap(): Observable<Map<number, string>> {
+    return this.apiData$
+      .pipe(
+        map((data: any) => new Map<number, string>(data.teams.map((tObj: any) => [Number(tObj.id), tObj.name]))),
+        tap(m => console.log(m))
+      );
   }
 
-  public getTeams(): string[] {
-    return Object.values(this.teamMap);
+  getAllPlayersByTeam(): Observable<Map<number, Player[]>> {
+    return this.apiData$
+      .pipe(
+        mergeMap((data: any) => data.elements.map((pObj: any) => new Player(pObj))),
+        groupBy(
+          (player: Player) => player.team,
+          p => p
+        ),
+        mergeMap(group => zip(of(group.key), group.pipe(toArray()))),
+        toArray(),
+        map(finalObj => new Map<number, Player[]>(finalObj))
+      );
   }
 
-  public getTeamMap(): any {
-    return this.teamMap;
-  }
-
-  getAllPlayers(): Player[] {
-    return this.playerList;
-  }
-
-  getAllPlayersMap(): any {
-    return this.playerDict;
-  }
-
-  getTeamId(teamName: string): number {
-    return this.teamMap.teamName;
+  getAllPlayersMap(): Observable<any> {
+    return this.apiData$
+      .pipe(
+        map((data: any) =>
+          Object.assign({}, ...data.elements.map((pObj: any) => ({[pObj.id]: new Player(pObj)}))))
+        // tap(p => console.log(p))
+      );
   }
 }

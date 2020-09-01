@@ -34,8 +34,8 @@ export class Player {
                 this[key] = jsonData[key];
             }
         }
-        if (jsonData.hasOwnProperty('web_name')) {
-            this.name = jsonData.web_name;
+        if (jsonData.hasOwnProperty('first_name') && jsonData.hasOwnProperty('second_name')) {
+            this.name = jsonData.first_name + ' ' + jsonData.second_name;
         }
         if (jsonData.hasOwnProperty('element_type')) {
             this.position = Position[jsonData.element_type];

@@ -1,4 +1,4 @@
-<h4 *ngIf="selectedTeam">{{selectedTeam}} Squad!</h4>
+<h4 *ngIf="selectedTeam">{{selectedTeam.name}} Squad!</h4>
 <table *ngIf="selectedTeam" class="table table-striped">
     <thead>
         <tr>
@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let player of players">
+        <tr *ngFor="let player of (players$ | async)?.get(selectedTeam.id)">
             <td>{{player.name}}</td>
             <td>{{player.position}}</td>
             <!-- <td>Available</td>

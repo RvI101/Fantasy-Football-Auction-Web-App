@@ -10,13 +10,13 @@ import { AngularFireAuth } from '@angular/fire/auth';
 export class LeagueCreateComponent implements OnInit {
   name: string;
   lId: string;
-  constructor(private leagueService: StoreService, private afAuth: AngularFireAuth) {}
+  constructor(private store: StoreService, private afAuth: AngularFireAuth) {}
 
   ngOnInit() {
   }
   createLeague(): void {
     const uid = this.afAuth.auth.currentUser.uid;
-    this.lId = this.leagueService.createLeague(uid, this.name);
-    console.log('LEague created');
+    this.store.createLeague(uid, this.name);
+    console.log('League created');
   }
 }

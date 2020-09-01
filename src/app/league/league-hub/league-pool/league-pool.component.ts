@@ -11,24 +11,21 @@ import { PlayerService } from 'src/app/players.service';
   styleUrls: ['./league-pool.component.css']
 })
 export class LeaguePoolComponent implements OnInit {
-  selectedTeam: number;
+  selectedTeam: any;
   players$: Observable<Player>;
-  teams: any;
+  teams$: Observable<Map<number, string>>;
   leagueId: string;
 
   constructor(private store: StoreService, private route: ActivatedRoute, private fileStore: PlayerService) {}
 
   ngOnInit() {
-    this.teams = this.fileStore.getTeamMap();
+    this.teams$ = this.fileStore.getTeamMap();
     this.leagueId = this.route.snapshot.paramMap.get('id');
     this.players$ = this.store.getPlayers(this.leagueId);
   }
 
-  getTeamKeys(): string[] {
-    return Object.keys(this.teams);
-  }
-  onSelect(team: string): void {
-    this.selectedTeam = Number(team) || 0;
+  onSelect(tId: number, tName: string): void {
+    this.selectedTeam = {id: tId, name: tName};
   }
 
 }

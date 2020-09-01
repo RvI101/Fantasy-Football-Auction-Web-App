@@ -1,5 +1,5 @@
 <section class="container-fluid">
-    <h4 *ngIf="selectedTeam" class="row">{{selectedTeam}} Squad!</h4>
+    <h4 *ngIf="selectedTeam" class="row">{{selectedTeam.name}} Squad!</h4>
     <form class="row">
         <table class="table table-borderless table-sm">
             <thead class="thead-dark">
@@ -18,7 +18,7 @@
                     <td>{{ player.position }}</td>
                     <td>
                         <div class="input-group mb-3 col-7">
-                            <input type="number" [(ngModel)]="bidAmounts[i]" min="1"  max="999" name="amount" class="form-control" placeholder="£M" aria-label="Bid Amount" aria-describedby="button-addon2">
+                            <input type="number" [(ngModel)]="bidAmounts[i]" min="1"  max="100" name="amount" class="form-control" placeholder="£M" aria-label="Bid Amount" aria-describedby="button-addon2">
                             <div class="input-group-append">
                                 <button (click)="markBid(player, bidAmounts[i])" class="btn btn-outline-secondary" type="button" id="button-addon2">Mark Bid</button>
                             </div>

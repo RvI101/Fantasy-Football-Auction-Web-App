@@ -4,11 +4,15 @@
             <div ngbDropdown class="d-inline-block">
                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Choose a team</button>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                    <button ngbDropdownItem *ngFor="let team of getTeamKeys()" (click)="onSelect(team)">{{teams[team]}}</button>
+                    <button ngbDropdownItem *ngFor="let teamE of ((teams$ | async) | keyvalue)" (click)="onSelect(teamE.key, teamE.value)">
+                        {{teamE.value}}
+                    </button>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-    <app-league-pool-table class="row" [leagueId]="leagueId" [selectedTeam]="selectedTeam" [players$]="players$"></app-league-pool-table>
+    <app-league-pool-table class="row" [leagueId]="leagueId" [selectedTeam]="selectedTeam" [players$]="players$">
+
+    </app-league-pool-table>
 </section>

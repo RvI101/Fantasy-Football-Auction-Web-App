@@ -57,17 +57,20 @@ export class StoreService {
     return this.db.object(`leagues/${leagueId}`).valueChanges();
   }
 
-  createLeague(uid: string, name: string): string {
-    const newLeague: League = this.leagueFactory.getNewLeague();
-    newLeague.setAdmin(uid);
-    newLeague.name = name;
-    const id = this.leaguesRef.push(newLeague).key;
-    this.db.list(`users/${this.uid}/admin`).set(id, { leagueId: id, name });
-    this.leaguesRef.update(id, {leagueId: id});
+  createLeague(uid: string, name: string): void {
+    console.log('Entered createLeague');
+    const newLeague$: Observable<League> = this.leagueFactory.getNewLeague();
 
-    this.db.list(`users/${this.uid}/leagues`)
-      .set(id, { leagueId: id, name, status: 'bid', squadSize: 0, uid: this.uid, money: this.MONEY });
-    return id;
+    newLeague$.subscribe((newLeague: League) => {
+      newLeague.setAdmin(uid);
+      newLeague.name = name;
+      const id = this.leaguesRef.push(newLeague).key;
+      this.db.list(`users/${this.uid}/admin`).set(id, { leagueId: id, name });
+      this.leaguesRef.update(id, {leagueId: id});
+
+      this.db.list(`users/${this.uid}/leagues`)
+        .set(id, { leagueId: id, name, status: 'bid', squadSize: 0, uid: this.uid, money: this.MONEY });
+    });
   }
 
   deleteLeague(leagueId: string): void {
