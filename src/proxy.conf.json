@@ -1,7 +1,8 @@
 {
-    "/api/*": {
+    "/api/bootstrap-static/": {
       "target": "https://fantasy.premierleague.com",
       "secure": true,
-      "changeOrigin": true
+      "changeOrigin": true,
+      "logLevel": "debug"
     }
   }

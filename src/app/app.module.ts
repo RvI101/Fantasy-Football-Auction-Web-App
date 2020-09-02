@@ -30,6 +30,7 @@ import { RulesComponent } from './rules/rules.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
+import { WINDOW_PROVIDERS } from './providers/window.providers';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,7 @@ import { ProfileComponent } from './profile/profile.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]
 })
 export class AppModule {

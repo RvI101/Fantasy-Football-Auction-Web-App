@@ -4,14 +4,24 @@ import playersData from './playerStore.json';
 import { Player } from './models/player';
 import { HttpClient } from '@angular/common/http';
 import { Observable, zip, of } from 'rxjs';
+import { WindowService } from './services/window.service';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class PlayerService {
-  allUrl = 'http://localhost:4200/api/bootstrap-static/';
+  path = '/api/bootstrap-static/';
+  url: string;
   apiData$: Observable<any>;
-  constructor(private http: HttpClient) {
-    this.apiData$ = http.get(this.allUrl);
+  constructor(private http: HttpClient, private windowService: WindowService) {
+    if (environment.production) {
+      this.url = environment.proxy + environment.fplApi;
+    } else {
+      // this.url = environment.proxy + environment.fplApi;
+      this.url = `${this.windowService.getOrigin()}` + this.path;
+    }
+    this.apiData$ = http.get(this.url);
+    console.log(this.url);
   }
 
   public getTeamMap(): Observable<Map<number, string>> {
