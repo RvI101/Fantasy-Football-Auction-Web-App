@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export NODE_PATH='/Users/rvi/Personal/Gale/Fantasy-Football-Auction-Web-App/nenv/lib/node_modules'
+export NPM_CONFIG_PREFIX='/Users/rvi/Personal/Gale/Fantasy-Football-Auction-Web-App/nenv'
+export npm_config_prefix='/Users/rvi/Personal/Gale/Fantasy-Football-Auction-Web-App/nenv'
+exec 'nenv/bin/node' "$@"
