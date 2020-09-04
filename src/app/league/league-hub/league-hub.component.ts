@@ -5,6 +5,7 @@ import { switchMap, map, takeUntil, tap, mergeAll, every, take } from 'rxjs/oper
 import { League } from 'src/app/models/league';
 import { Observable, Subject, zip } from 'rxjs';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { User } from 'firebase';
 
 @Component({
   selector: 'app-league-hub',
@@ -46,11 +47,11 @@ export class LeagueHubComponent implements OnInit, OnDestroy {
       })
     );
 
-    const ul$ = this.league$
+    const ul$ = zip(this.league$, this.afAuth.user.pipe(map((u: User) => u.uid)))
       .pipe(
         takeUntil(this.unsubscribe$),
-        tap(l => {this.isAdmin = l.admin === this.afAuth.auth.currentUser.uid; }),
-        switchMap(l => l.members.map(m => this.store.getUserLeagueDetails(l.leagueId, m))),
+        tap(([l, uid]: [League, string]) => {this.isAdmin = l.admin === uid; }),
+        switchMap(([l, uid]: [League, string]) => l.members.map(m => this.store.getUserLeagueDetails(l.leagueId, m))),
         mergeAll()
       );
 

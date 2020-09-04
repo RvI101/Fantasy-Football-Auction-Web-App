@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   constructor(public afAuth: AngularFireAuth, private db: AngularFireDatabase, private router: Router) {
     this.usersRef = this.db.object('users');
     // this.afAuth.auth.setPersistence(firebase.auth.Auth.Persistence.SESSION);
-    this.afAuth.auth.onAuthStateChanged(user => {
+    this.afAuth.onAuthStateChanged(user => {
       if (user) {
         // User is signed in.
         const isAnonymous = user.isAnonymous;
@@ -35,10 +35,10 @@ export class LoginComponent implements OnInit {
   }
   login() {
     const provider = new firebase.auth.GoogleAuthProvider();
-    this.afAuth.auth.signInWithPopup(provider);
+    this.afAuth.signInWithPopup(provider);
   }
   logout() {
-    this.afAuth.auth.signOut();
+    this.afAuth.signOut();
   }
 
   firstWord(name: string): string {

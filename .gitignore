@@ -48,3 +48,6 @@ Thumbs.db
 /src/environments
 firebase.json
 /src/assets/
+
+# Virtual Env
+/env-*

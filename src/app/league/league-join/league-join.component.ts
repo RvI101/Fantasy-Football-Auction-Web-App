@@ -10,29 +10,38 @@ import { ToastService } from 'src/app/toast/toast.service';
 })
 export class LeagueJoinComponent implements OnInit {
   lId: string;
-  uid: string;
-  constructor(private afAuth: AngularFireAuth, private store: StoreService, private toastService: ToastService) {
-    this.uid = afAuth.auth.currentUser.uid;
+  constructor(private store: StoreService, private toastService: ToastService) {
   }
 
   ngOnInit() {
   }
 
   joinLeague(): void {
-    const hasJoined = this.store.isMember(this.lId);
-    if (!hasJoined) {
-      this.store.joinLeague(this.lId);
-      this.showJoinToast();
-    } else {
-      this.showErrorToast();
-    }
+    this.store.joinLeague(this.lId)
+      .subscribe(canJoin => {
+        if (canJoin) {
+          this.showJoinToast();
+        } else {
+          this.showInvalidToast();
+        }
+      },
+      err => {
+        this.showErrorToast();
+        console.log(err);
+      }
+      );
+    this.showJoinToast();
   }
 
   showJoinToast() {
-    this.toastService.show(`You have joined League ${this.lId}`);
+    this.toastService.show(`You have joined league ${this.lId}`);
   }
 
   showErrorToast() {
-    this.toastService.show(`You have already joined this League!`);
+    this.toastService.show(`Something went wrong when attempting to join this league`);
+  }
+
+  showInvalidToast() {
+    this.toastService.show(`You have already joined this league!`);
   }
 }
