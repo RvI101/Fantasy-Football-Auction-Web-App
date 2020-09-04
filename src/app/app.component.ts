@@ -32,7 +32,7 @@ export class AppComponent {
   //   this.afAuth.auth.signInAnonymously();
   // }
   logout() {
-    this.afAuth.auth.signOut();
+    this.afAuth.signOut();
   }
 
 }

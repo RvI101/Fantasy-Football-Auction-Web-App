@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from '../../store.service';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { User } from 'firebase';
+import { map, take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-league-create',
@@ -10,13 +12,12 @@ import { AngularFireAuth } from '@angular/fire/auth';
 export class LeagueCreateComponent implements OnInit {
   name: string;
   lId: string;
-  constructor(private store: StoreService, private afAuth: AngularFireAuth) {}
+  constructor(private store: StoreService) {}
 
   ngOnInit() {
   }
   createLeague(): void {
-    const uid = this.afAuth.auth.currentUser.uid;
-    this.store.createLeague(uid, this.name);
+    this.store.createLeague(this.name);
     console.log('League created');
   }
 }

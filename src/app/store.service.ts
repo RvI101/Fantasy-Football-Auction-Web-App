@@ -1,26 +1,31 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireAction, AngularFireList } from '@angular/fire/database';
-import { Observable, BehaviorSubject, Subject } from 'rxjs';
+import { Observable, BehaviorSubject, Subject, zip } from 'rxjs';
 import { switchMap, map, mergeMap, take, mergeAll, count, reduce, tap } from 'rxjs/operators';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { PlayerService } from './players.service';
 import { LeagueFactoryService } from './league-factory.service';
 import { League } from './models/league';
 import { Player } from './models/player';
+import { User } from 'firebase';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StoreService {
-  MONEY = 100;
+  static readonly MONEY = 100;
+  static readonly SQUAD_LIMIT = 15;
   leaguesRef: AngularFireList<any>;
-  uid: string;
+  uid$: Observable<string>;
   dirtyUserLeagueEntries$: Subject<any|null>;
   userLeagueKeys$: Observable<AngularFireAction<firebase.database.DataSnapshot>[]>;
 
   constructor(private db: AngularFireDatabase, private afAuth: AngularFireAuth,
               private playerService: PlayerService, private leagueFactory: LeagueFactoryService) {
-    this.uid = afAuth.auth.currentUser.uid;
+    this.uid$ = afAuth.user.pipe(
+      map((u: User) => u.uid),
+      take(1)
+      );
     this.leaguesRef = db.list('leagues');
     this.dirtyUserLeagueEntries$ = new Subject();
     // Delete dirty user league entries
@@ -30,9 +35,9 @@ export class StoreService {
       db.list(`users/${uid}/leagues`).remove(leagueIdToDelete);
     });
 
-    db.list(`users/${this.uid}/leagues`).snapshotChanges()
-      .pipe(map(changes => changes
-        .map(c => ({ key: c.payload.key, ...c.payload.val()}))));
+    // db.list(`users/${uid}/leagues`).snapshotChanges()
+    //   .pipe(map(changes => changes
+    //     .map(c => ({ key: c.payload.key, ...c.payload.val() as {}}))));
 
     this.leaguesRef.stateChanges(['child_removed'])
     .subscribe(action => {
@@ -57,19 +62,19 @@ export class StoreService {
     return this.db.object(`leagues/${leagueId}`).valueChanges();
   }
 
-  createLeague(uid: string, name: string): void {
+  createLeague(name: string): void {
+    // TODO: Find out why I am accepting uid as argument...
     console.log('Entered createLeague');
-    const newLeague$: Observable<League> = this.leagueFactory.getNewLeague();
-
-    newLeague$.subscribe((newLeague: League) => {
+    const newLeague$: Observable<[League, string]> = zip(this.leagueFactory.getNewLeague(), this.uid$);
+    newLeague$.subscribe(([newLeague, uid]: [League, string]) => {
       newLeague.setAdmin(uid);
       newLeague.name = name;
       const id = this.leaguesRef.push(newLeague).key;
-      this.db.list(`users/${this.uid}/admin`).set(id, { leagueId: id, name });
+      this.db.list(`users/${uid}/admin`).set(id, { leagueId: id, name });
       this.leaguesRef.update(id, {leagueId: id});
 
-      this.db.list(`users/${this.uid}/leagues`)
-        .set(id, { leagueId: id, name, status: 'bid', squadSize: 0, uid: this.uid, money: this.MONEY });
+      this.db.list(`users/${uid}/leagues`)
+        .set(id, { leagueId: id, name, status: 'bid', squadSize: 0, uid, money: StoreService.MONEY });
     });
   }
 
@@ -78,34 +83,43 @@ export class StoreService {
     this.leaguesRef.remove(leagueId);
   }
 
-  joinLeague(leagueId: string) {
-    this.db.list(`leagues/${leagueId}/members`).push(this.uid);
-    this.db.list(`users/${this.uid}/leagues`)
-      .set(leagueId, { leagueId, name, status: 'bid', squadSize: 0, uid: this.uid, money: this.MONEY });
-    this.getLeague(leagueId)
-      .subscribe(league => {
-        console.log(league);
-        this.db.list(`users/${this.uid}/leagues`).update(leagueId, {name: league.name});
-      });
+  joinLeague(leagueId: string): Observable<boolean> {
+    const canJoin$ = this.isMember(leagueId).pipe(map(f => !f));
 
+    return zip(this.getLeague(leagueId).pipe(take(1)), canJoin$, this.uid$)
+      .pipe(
+        tap(([league, canJoin, uid]: [League, boolean, string]) => {
+        if (canJoin) {
+          this.db.list(`leagues/${leagueId}/members`).push(uid);
+          this.db.list(`users/${uid}/leagues`)
+            .set(leagueId, { leagueId, name, status: 'bid', squadSize: 0, uid, money: StoreService.MONEY });
+          console.log(league);
+          this.db.list(`users/${uid}/leagues`).update(leagueId, {name: league.name});
+        }
+        }),
+        map(([league, canJoin, uid]: [League, boolean, string]) => canJoin)
+      );
   }
   getAdminLeagues(): Observable<any> {
-    return this.db.list(`users/${this.uid}/admin`).valueChanges();
+    return this.uid$.pipe(
+      switchMap(uid => this.db.list(`users/${uid}/admin`).valueChanges())
+    );
   }
 
   getMemberLeagues(): Observable<any> {
-    return this.db.list(`users/${this.uid}/leagues`).valueChanges();
+    return this.uid$.pipe(
+      switchMap(uid => this.db.list(`users/${uid}/leagues`).valueChanges())
+    );
   }
 
-  isMember(leagueId: string): boolean {
-    let flag = false;
-    this.db.list(`users/${this.uid}/leagues`, ref => ref.orderByChild('leagueId').equalTo(leagueId))
-      .valueChanges()
+  isMember(leagueId: string): Observable<boolean> {
+    return this.uid$
       .pipe(
-        take(1)
-      )
-      .subscribe(d => flag = d ? true : false);
-    return flag;
+        mergeMap(uid => this.db.list(`users/${uid}/leagues`,
+          ref => ref.orderByChild('leagueId').equalTo(leagueId)).valueChanges()),
+        take(1),
+        map(val => Boolean(val.length))
+      );
   }
 
   getPlayers(leagueId: string): Observable<Player> {
@@ -123,53 +137,77 @@ export class StoreService {
       return this.db.object(`users/${userId}/displayName`).valueChanges()
       .pipe(map(dpName => dpName as string));
     } else {
-      return this.db.object(`users/${this.uid}/displayName`).valueChanges()
-        .pipe(map(dpName => dpName as string));
+      return this.uid$
+        .pipe(
+          mergeMap(uid => this.db.object(`users/${uid}/displayName`).valueChanges()),
+          map(dpName => dpName as string)
+        );
     }
   }
 
   setUserDisplayName(displayName: string): void {
-    this.db.object(`users/${this.uid}/displayName`).set(displayName);
+    this.uid$
+      .subscribe(uid => this.db.object(`users/${uid}/displayName`).set(displayName));
   }
 
   getUserStatus(leagueId: string): Observable<any> {
-    return this.db.object(`users/${this.uid}/leagues/${leagueId}/status`).valueChanges();
+    return this.uid$
+      .pipe(
+        mergeMap(uid => this.db.object(`users/${uid}/leagues/${leagueId}/status`).valueChanges())
+      );
   }
 
   markTentativeBid(leagueId: string, bid: any): void {
-    const key = this.db.list(`users/${this.uid}/leagues/${leagueId}/tentativeBids`).push(bid).key;
-    this.db.list(`users/${this.uid}/leagues/${leagueId}/tentativeBids`).update(key, {key});
+    this.uid$
+      .subscribe(uid => {
+        const key = this.db.list(`users/${uid}/leagues/${leagueId}/tentativeBids`).push(bid).key;
+        this.db.list(`users/${uid}/leagues/${leagueId}/tentativeBids`).update(key, {key});
+      });
   }
 
   getTentativeBids(leagueId: string): Observable<any[]> {
-    return this.db.list<any>(`users/${this.uid}/leagues/${leagueId}/tentativeBids`).valueChanges();
+    return this.uid$
+    .pipe(
+      mergeMap(uid => this.db.list<any>(`users/${uid}/leagues/${leagueId}/tentativeBids`).valueChanges())
+    );
   }
 
   deleteTentativeBid(key: string, leagueId: string): void {
-    this.db.list(`users/${this.uid}/leagues/${leagueId}/tentativeBids`).remove(key);
+    this.uid$
+      .subscribe(uid => {
+        this.db.list(`users/${uid}/leagues/${leagueId}/tentativeBids`).remove(key);
+      });
   }
 
   getBidHistory(leagueId: string): Observable<any[]> {
-    return this.db.list<any>(`users/${this.uid}/leagues/${leagueId}/bidHistory`).valueChanges();
+    return this.uid$
+      .pipe(
+        mergeMap(uid => this.db.list<any>(`users/${uid}/leagues/${leagueId}/bidHistory`).valueChanges())
+      );
   }
 
   getSquadSize(leagueId: string): Observable<number> {
-    return this.db.object<number>(`users/${this.uid}/leagues/${leagueId}/squadSize`).valueChanges();
+    return this.uid$
+      .pipe(
+        mergeMap(uid => this.db.object<number>(`users/${uid}/leagues/${leagueId}/squadSize`).valueChanges())
+      );
   }
 
   placeBids(leagueId: string, bids: any[]): void {
-    bids.forEach((b, i) => {
-      const id = b.player.id;
-      b.uid = this.uid;
-      // Placing bid on player
-      this.db.list(`leagues/${leagueId}/players/${id}/bids`).set(this.uid, b);
-      // Pushing bid into user bid history
-      this.db.list(`users/${this.uid}/leagues/${leagueId}/bidHistory`).push(b);
+    this.uid$.subscribe((uid: string) => {
+      bids.forEach((b, i) => {
+        const id = b.player.id;
+        b.uid = uid;
+        // Placing bid on player
+        this.db.list(`leagues/${leagueId}/players/${id}/bids`).set(uid, b);
+        // Pushing bid into user bid history
+        this.db.list(`users/${uid}/leagues/${leagueId}/bidHistory`).push(b);
+      });
+      // Clear already placed bids
+      this.db.list(`users/${uid}/leagues/${leagueId}/tentativeBids`).remove();
+      // Move status to WAIT
+      this.db.object(`users/${uid}/leagues/${leagueId}/status`).set('wait');
     });
-    // Clear already placed bids
-    this.db.list(`users/${this.uid}/leagues/${leagueId}/tentativeBids`).remove();
-    // Move status to WAIT
-    this.db.object(`users/${this.uid}/leagues/${leagueId}/status`).set('wait');
   }
 
   getUserLeagueDetails(leagueId: string, userId: string): Observable<any> {
@@ -178,7 +216,10 @@ export class StoreService {
   }
 
   getResolvedBids(leagueId: string): Observable<any[]> {
-    return this.db.list(`users/${this.uid}/leagues/${leagueId}/resolvedBids`).valueChanges();
+    return this.uid$
+      .pipe(
+        mergeMap(uid => this.db.list(`users/${uid}/leagues/${leagueId}/resolvedBids`).valueChanges())
+      );
   }
 
   resolveBids(leagueId: string): void {
@@ -217,30 +258,35 @@ export class StoreService {
   }
 
   updateUserLeagueState(leagueId: string): void {
-    const s = 15;
-    const m = 100;
-    const bids$ = this.db.list<any>(`users/${this.uid}/leagues/${leagueId}/resolvedBids`)
-      .valueChanges()
+    const s = StoreService.SQUAD_LIMIT;
+    const m = StoreService.MONEY;
+    const bids$ = this.uid$
       .pipe(
+        mergeMap(uid => this.db.list<any>(`users/${uid}/leagues/${leagueId}/resolvedBids`).valueChanges()),
         take(1),
-        mergeMap(val => val)
+        mergeAll()
       );
-    bids$.pipe(count())
-        .subscribe(c => {
-          this.db.object(`users/${this.uid}/leagues/${leagueId}`).update({squadSize: c});
-          if (c === 15) {
-            this.db.object(`users/${this.uid}/leagues/${leagueId}`).update({status: 'done'});
+
+    zip(this.uid$, bids$.pipe(count()))
+        .subscribe(([uid, c]: [string, number]) => {
+          this.db.object(`users/${uid}/leagues/${leagueId}`).update({squadSize: c});
+          if (c === StoreService.SQUAD_LIMIT) {
+            this.db.object(`users/${uid}/leagues/${leagueId}`).update({status: 'done'});
           }
         });
-    bids$.pipe(
+
+    zip(this.uid$, bids$.pipe(
           map(b => b.amount),
           reduce((acc, curr) => acc + curr, 0))
-        .subscribe(sum => {
-          this.db.object(`users/${this.uid}/leagues/${leagueId}`).update({money: m - sum });
+        ).subscribe(([uid, sum]: [string, number]) => {
+          this.db.object(`users/${uid}/leagues/${leagueId}`).update({money: m - sum });
         });
   }
 
   getUserMoney(leagueId: string): Observable<number> {
-    return this.db.object<number>(`users/${this.uid}/leagues/${leagueId}/money`).valueChanges();
+    return this.uid$
+      .pipe(
+        mergeMap(uid => this.db.object<number>(`users/${uid}/leagues/${leagueId}/money`).valueChanges())
+      );
   }
 }
