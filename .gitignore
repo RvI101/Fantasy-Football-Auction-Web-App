@@ -45,9 +45,12 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# Deployment Config
 /src/environments
 firebase.json
 /src/assets/
+/.firebase
+.firebaserc
 
 # Virtual Env
 /env-*
