@@ -1,13 +1,15 @@
-<section class="my-md-2" *ngIf="(bidHistory$ | async) as bids">
+<section class="my-2" *ngIf="(bidHistory$ | async) as bids">
     <p>
         <ngb-alert [dismissible]="false" type="info">
             <strong>Bid History</strong> - The bids you've already placed.
         </ngb-alert>
     </p>
-    <ul class="list-group list-group-flush" *ngFor="let item of bids">
-        <li class="list-group-item">
-            {{ item.name }} &#183; {{ getShortHandPosition(item.player.position) }} &#183; {{ item.player.team }} &#183;
-            {{ item.amount | currency:'GBP':'symbol':'1.0-1'}}M
-        </li>
-    </ul>
+    <section *ngIf="(teams$ | async) as teams">
+        <ul class="list-group list-group-flush" *ngFor="let item of bids">
+            <li class="list-group-item py-1">
+                {{ item.name }} &#183; {{ item.player.position }} &#183; {{ teams.get(item.player.team) }} &#183;
+                {{ item.amount | currency:'GBP':'symbol':'1.0-1'}}M
+            </li>
+        </ul>
+    </section>
 </section>

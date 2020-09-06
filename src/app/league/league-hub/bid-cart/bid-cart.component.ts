@@ -8,7 +8,7 @@ import { distinct, takeUntil, count, map, reduce, mergeMap, tap} from 'rxjs/oper
   templateUrl: './bid-cart.component.html',
   styleUrls: ['./bid-cart.component.css']
 })
-export class BidCartComponent implements OnInit, OnDestroy{
+export class BidCartComponent implements OnInit, OnDestroy {
   @Input() leagueKey: string;
   private unsubscribe$ = new Subject();
   tentativeBids: Observable<any[]>;
@@ -22,7 +22,7 @@ export class BidCartComponent implements OnInit, OnDestroy{
   constructor(private store: StoreService) { }
 
   ngOnInit() {
-    console.log(this.leagueKey);
+    // console.log(this.leagueKey);
     this.isComplete = false;
     this.hasDuplicate = false;
     this.tentativeBids = this.store.getTentativeBids(this.leagueKey);
@@ -42,18 +42,18 @@ export class BidCartComponent implements OnInit, OnDestroy{
       });
     });
 
-    this.balance$ = combineLatest(this.store.getTentativeBids(this.leagueKey)
+    this.balance$ = combineLatest([this.store.getTentativeBids(this.leagueKey)
       .pipe(
         map(val => val.reduce((sum, curr) => sum + curr.amount, 0))
         ),
-      this.store.getUserMoney(this.leagueKey))
+      this.store.getUserMoney(this.leagueKey)])
         .pipe(
           map(arr => arr[1] - arr[0])
         );
 
     this.balance$.subscribe(b => this.balance = b);
 
-    combineLatest(this.store.getTentativeBids(this.leagueKey).pipe(map(b => b.length)), this.squadSpace$)
+    combineLatest([this.store.getTentativeBids(this.leagueKey).pipe(map(b => b.length)), this.squadSpace$])
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe(c => {
         this.isComplete = (c[0] === c[1]);

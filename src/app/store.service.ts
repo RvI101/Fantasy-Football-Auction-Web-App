@@ -63,7 +63,6 @@ export class StoreService {
   }
 
   createLeague(name: string): void {
-    // TODO: Find out why I am accepting uid as argument...
     console.log('Entered createLeague');
     const newLeague$: Observable<[League, string]> = zip(this.leagueFactory.getNewLeague(), this.uid$);
     newLeague$.subscribe(([newLeague, uid]: [League, string]) => {

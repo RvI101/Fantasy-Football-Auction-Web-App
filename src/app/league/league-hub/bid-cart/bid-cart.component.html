@@ -1,5 +1,5 @@
 <!-- <img src="../../../../assets/auction.svg" height="64" alt="Auction Gavel"/> -->
-<section class="my-md-2" *ngIf="(tentativeBids | async) as bids">
+<section class="my-2" *ngIf="(tentativeBids | async) as bids">
 
         <ngb-alert [dismissible]="false" type="info">
             <strong>Marked Bids</strong> - {{ bids.length }}/{{ squadSpace }} bids marked.
@@ -11,7 +11,7 @@
             <ngb-alert [dismissible]="false" type="danger" *ngIf="belowThreshold(balance)">
                 You do not have enough money for these bids!
             </ngb-alert>
-            <div class="my-md-3">
+            <div class="my-3">
                 <span [ngClass]="belowThreshold(balance)?'bg-danger':'bg-success'" class="rounded-pill p-2">
                     {{balance | currency:'GBP':'symbol':'1.0-1'}}M
                 </span>

@@ -2,8 +2,8 @@
     <h3 class="row">League Hub for {{L.name}}</h3>
     <ngb-alert class="row" [dismissible]="false" type="info">Current Status : {{ status?.toUpperCase() }}</ngb-alert>
     <section class="row">
-        <app-my-squad class="col" [leagueId]="L.leagueId"></app-my-squad>
-        <div class="col">
+        <app-my-squad class="col-12 col-md-4 my-2" [leagueId]="L.leagueId"></app-my-squad>
+        <div class="col-12 col-md-4">
             <table class="table table-borderless table-sm">
                 <caption>Members of {{L.name}}</caption>
                 <thead class="thead-dark">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <ngb-tabset class="col-5" type="pills">
+        <ngb-tabset class="col-12 col-md-4" type="pills">
             <ngb-tab title="Bid Cart">
                 <ng-template ngbTabContent>
                     <app-bid-cart [leagueKey]="L.leagueId"></app-bid-cart>

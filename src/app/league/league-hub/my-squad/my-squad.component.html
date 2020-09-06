@@ -1,9 +1,22 @@
-<section *ngIf="resBids$ | async as bids">
-    <h5>Squad</h5>
-    <ul class="list-group list-group-flush" *ngFor="let item of bids">
-        <li class="list-group-item">
-            {{ item.name }} &#183; {{ getShortHandPosition(item.player.position) }} &#183; {{ item.player.team }} &#183;
-            {{ item.amount | currency:'GBP':'symbol':'1.0-1'}}M
-        </li>
-    </ul>
-</section>
+<ngb-accordion #a="ngbAccordion" activeIds="my-squad-panel-box">
+    <ngb-panel id="my-squad-panel">
+      <ng-template ngbPanelHeader>
+        <div class="d-flex align-items-center justify-content-between">
+          <h5 class="m-0">My Squad</h5>
+          <button ngbPanelToggle class="btn btn-link p-0">Toggle</button>
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <section *ngIf="resBids$ | async as bids">
+            <section *ngIf="teams$ | async as teams">
+                <ul class="list-group list-group-flush" *ngFor="let item of bids">
+                    <li class="list-group-item py-1">
+                        {{ item.name }} &#183; {{ item.player.position }} &#183; {{ teams.get(item.player.team) }} &#183;
+                        {{ item.amount | currency:'GBP':'symbol':'1.0-1' }}M
+                    </li>
+                </ul>
+            </section>
+        </section>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>

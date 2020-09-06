@@ -28,7 +28,7 @@ export class PlayerService {
     return this.apiData$
       .pipe(
         map((data: any) => new Map<number, string>(data.teams.map((tObj: any) => [Number(tObj.id), tObj.name]))),
-        tap(m => console.log(m))
+        // tap(m => console.log(m))
       );
   }
 
