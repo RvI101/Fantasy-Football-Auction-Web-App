@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireAction, AngularFireList } from '@angular/fire/database';
-import { Observable, BehaviorSubject, Subject, zip } from 'rxjs';
+import { Observable, BehaviorSubject, Subject, zip, combineLatest } from 'rxjs';
 import { switchMap, map, mergeMap, take, mergeAll, count, reduce, tap } from 'rxjs/operators';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { PlayerService } from './players.service';
@@ -210,15 +210,23 @@ export class StoreService {
   }
 
   getUserLeagueDetails(leagueId: string, userId: string): Observable<any> {
-    // this.db.object(`users/${userId}/leagues/${leagueId}`).update({uid: userId});
-    return this.db.object(`users/${userId}/leagues/${leagueId}`).valueChanges();
+    return combineLatest([this.db.object(`users/${userId}/leagues/${leagueId}`).valueChanges(),
+    this.getUserDisplayName(userId)])
+      .pipe(
+        map(([ul, memberName]: [any, string]) =>
+        ({uid: ul.uid, status: ul.status, squadSize: ul.squadSize, displayName: memberName}))
+      );
   }
 
-  getResolvedBids(leagueId: string): Observable<any[]> {
-    return this.uid$
+  getResolvedBids(leagueId: string, memberId?: string): Observable<any[]> {
+    if (memberId) {
+      return this.db.list(`users/${memberId}/leagues/${leagueId}/resolvedBids`).valueChanges();
+    } else {
+      return this.uid$
       .pipe(
         mergeMap(uid => this.db.list(`users/${uid}/leagues/${leagueId}/resolvedBids`).valueChanges())
       );
+    }
   }
 
   resolveBids(leagueId: string): void {

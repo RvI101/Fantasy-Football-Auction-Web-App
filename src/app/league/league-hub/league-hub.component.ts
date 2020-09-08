@@ -1,11 +1,12 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { StoreService } from 'src/app/store.service';
-import { switchMap, map, takeUntil, tap, mergeAll, every, take } from 'rxjs/operators';
+import { switchMap, map, takeUntil, tap, mergeAll, every, take, toArray } from 'rxjs/operators';
 import { League } from 'src/app/models/league';
-import { Observable, Subject, zip } from 'rxjs';
+import { Observable, Subject, zip, combineLatest } from 'rxjs';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { User } from 'firebase';
+import { isEmpty } from 'lodash-es';
 
 @Component({
   selector: 'app-league-hub',
@@ -24,6 +25,7 @@ export class LeagueHubComponent implements OnInit, OnDestroy {
   allWait = false;
   memberMap = {};
   money$: Observable<number>;
+  leagueMembers$: Observable<any[]>;
   projectedMoney: number;
   squadSize$: Observable<number>;
   constructor(private router: Router, private store: StoreService, private route: ActivatedRoute, private afAuth: AngularFireAuth) { }
@@ -47,33 +49,16 @@ export class LeagueHubComponent implements OnInit, OnDestroy {
       })
     );
 
-    const ul$ = zip(this.league$, this.afAuth.user.pipe(map((u: User) => u.uid)))
+    this.leagueMembers$ = combineLatest([this.league$, this.afAuth.user.pipe(map((u: User) => u.uid))])
       .pipe(
         takeUntil(this.unsubscribe$),
         tap(([l, uid]: [League, string]) => {this.isAdmin = l.admin === uid; }),
-        switchMap(([l, uid]: [League, string]) => l.members.map(m => this.store.getUserLeagueDetails(l.leagueId, m))),
-        mergeAll()
+        switchMap(([l, uid]: [League, string]) => combineLatest(l.members.map(m => this.store.getUserLeagueDetails(l.leagueId, m)))),
       );
 
-    const memberNames$ = this.league$
-        .pipe(
-          takeUntil(this.unsubscribe$),
-          switchMap(l => l.members.map(m => this.store.getUserDisplayName(m).pipe(take(1)))),
-          mergeAll()
-          // tap(n => console.log(`Member Name : ${n}`))
-        );
-
-    // TODO: replace selector lambda arg with map()
-    const leagueMembers$ = zip(
-      ul$,
-      memberNames$,
-      (ul: any, memberName: string) =>
-        ({uid: ul.uid, status: ul.status, squadSize: ul.squadSize, displayName: memberName})
-    );
-
-    leagueMembers$.subscribe(ul => {
-      this.memberMap[ul.uid] = ul;
-      // console.log(ul);
+    this.leagueMembers$.subscribe(ulist => {
+      this.memberMap = Object.assign({}, ...ulist.map((uObj: any) => ({[uObj.id]: uObj})));
+      // console.log(ulist);
       const validStatuses = ([...Object.values(this.memberMap)] as any[]).filter(ms => ms.status !== 'done');
       this.allWait = validStatuses.length && validStatuses.every(ms => ms.status === 'wait');
     });
@@ -97,5 +82,14 @@ export class LeagueHubComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
+  }
+
+  isMemberMapLoaded(): boolean {
+    // console.log(this.memberMap);
+    return !isEmpty(this.memberMap);
+  }
+
+  getMemberEntries(): [string, any][] {
+    return Object.entries(this.memberMap);
   }
 }

@@ -4,23 +4,8 @@
     <section class="row">
         <app-my-squad class="col-12 col-md-4 my-2" [leagueId]="L.leagueId"></app-my-squad>
         <div class="col-12 col-md-4">
-            <table class="table table-borderless table-sm">
-                <caption>Members of {{L.name}}</caption>
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Actions</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let member of memberMap | keyvalue">
-                        <td>{{member.value.displayName !== null ? member.value.displayName : member.key.slice(-4)}}</td>
-                        <td><button class="btn btn-outline-primary">View</button></td>
-                        <td>{{ (member.value)?.status.toUpperCase() }}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <app-league-member-table [league]="L" [leagueMembers$]="leagueMembers$">
+            </app-league-member-table>
             <div class="card border-info mb-3" style="max-width: 18rem;">
                 <div class="card-header bg-info"><h5>Team Report</h5></div>
                 <div class="card-body">

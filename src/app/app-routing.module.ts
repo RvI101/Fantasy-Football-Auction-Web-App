@@ -16,9 +16,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'players', component: PlayerListComponent, canActivate: [AngularFireAuthGuard]},
   {path: 'leagues', component: LeagueComponent, canActivate: [AngularFireAuthGuard]},
-  {path: 'leagues/:id', component: LeagueHubComponent, canActivate: [AngularFireAuthGuard], children: [
-    {path: 'admin', component: LeagueAdminConsoleComponent, canActivate: [IsLeagueAdminGuard]}
-  ]},
+  {path: 'leagues/:id', component: LeagueHubComponent, canActivate: [AngularFireAuthGuard]},
   {path: 'rules', component: RulesComponent},
   {path: 'profile', component: ProfileComponent}
 ];
