@@ -1,5 +1,6 @@
 import 'zone.js/dist/zone-node';
-
+(global as any).WebSocket = require('ws');
+(global as any).XMLHttpRequest = require('xhr2');
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import express from 'express';
 import { join } from 'path';
@@ -23,7 +24,7 @@ export function app(): express.Express {
   server.set('views', distFolder);
 
   // Example Express Rest API endpoints
-  // server.get('/api/**', (req, res) => { });
+  server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'
