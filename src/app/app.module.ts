@@ -62,7 +62,7 @@ import { LeagueMemberTableComponent } from './league/league-hub/league-member-ta
   ],
   imports: [
     NgbModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
