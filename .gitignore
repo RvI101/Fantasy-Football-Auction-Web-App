@@ -51,6 +51,8 @@ firebase.json
 /src/assets/
 /.firebase
 .firebaserc
+.gcloudignore
+app.yaml
 
 # Virtual Env
 /env-*
