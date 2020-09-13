@@ -1,14 +1,14 @@
 <section class="mb-2">
     <h4>{{ league.name }} Table</h4>
     <ngb-accordion #a="ngbAccordion">
-        <ngb-panel *ngFor="let member of leagueMembers$ | async" [type]="member.uid === league.admin ? 'secondary':'light'">
+        <ngb-panel *ngFor="let member of leagueMembers$ | async" [type]="member.uid === league.admin ? 'primary':'light'">
             <ng-template ngbPanelHeader>
                 <div class="d-flex align-items-center justify-content-between">
                     <h5 class="m-0">
                         {{ member.displayName !== null ? member.displayName : member.uid.slice(-4) }}
                     </h5>
                     <span class="badge badge-info">{{ capitalizeWord(member.status) }}</span>
-                    <button ngbPanelToggle *ngIf="member.uid !== league.admin" class="btn btn-sm btn-outline-primary ml-2">Toggle</button>
+                    <button ngbPanelToggle class="btn btn-sm btn-outline-info ml-2">Toggle</button>
                 </div>
             </ng-template>
             <ng-template ngbPanelContent>
