@@ -8,6 +8,8 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
+import { ApiHelper } from 'api-helper';
+
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -24,7 +26,16 @@ export function app(): express.Express {
   server.set('views', distFolder);
 
   // Example Express Rest API endpoints
-  server.get('/api/**', (req, res) => { });
+  server.get('/api/bootstrap-static', (req, res) => {
+    ApiHelper.makeAPICall('https://fantasy.premierleague.com/api/bootstrap-static/')
+      .then(response => {
+        // console.log(response);
+        res.json(response);
+      })
+      .catch(error => {
+        res.send(error);
+      });
+  });
   // Serve static files from /browser
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'

@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { map, mergeMap, groupBy, toArray, tap } from 'rxjs/operators';
 import playersData from './playerStore.json';
 import { Player } from './models/player';
 import { HttpClient } from '@angular/common/http';
 import { Observable, zip, of } from 'rxjs';
-import { WindowService } from './services/window.service';
 import { environment } from 'src/environments/environment';
+import { DOCUMENT } from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,14 +13,15 @@ export class PlayerService {
   path = '/api/bootstrap-static/';
   url: string;
   apiData$: Observable<any>;
-  constructor(private http: HttpClient, private windowService: WindowService) {
+  constructor(private http: HttpClient, @Inject(DOCUMENT) private document: Document) {
     if (environment.production) {
       this.url = environment.proxy + environment.fplApi;
     } else {
       // this.url = environment.proxy + environment.fplApi;
-      this.url = `${this.windowService.getOrigin()}` + this.path;
+      this.url = `${this.document.location.protocol}//${this.document.location.hostname}:${this.document.location.port}`
+       + this.path;
     }
-    this.apiData$ = http.get(this.url);
+    this.apiData$ = this.http.get(this.url);
     console.log(this.url);
   }
 
