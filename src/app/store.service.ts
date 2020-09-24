@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireAction, AngularFireList } from '@angular/fire/database';
-import { Observable, BehaviorSubject, Subject, zip, combineLatest } from 'rxjs';
+import { Observable, Subject, zip, combineLatest } from 'rxjs';
 import { switchMap, map, mergeMap, take, mergeAll, count, reduce, tap } from 'rxjs/operators';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { PlayerService } from './players.service';
@@ -60,6 +60,16 @@ export class StoreService {
 
   getLeague(leagueId: string): Observable<any> {
     return this.db.object(`leagues/${leagueId}`).valueChanges();
+  }
+
+  getLeagueTeamMap(leagueId: string): Observable<Map<number, string>> {
+    return this.db.object(`leagues/${leagueId}/teamMap`).valueChanges()
+      .pipe(
+        take(1),
+        map((t: any) => new Map(Object.entries(t)
+            .map(([k, v]: [string, string]) => [Number(k), v]))
+        )
+      );
   }
 
   createLeague(name: string): void {

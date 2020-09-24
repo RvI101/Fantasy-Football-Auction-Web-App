@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { map, mergeMap, groupBy, toArray, tap } from 'rxjs/operators';
-import playersData from './playerStore.json';
 import { Player } from './models/player';
 import { HttpClient } from '@angular/common/http';
 import { Observable, zip, of } from 'rxjs';

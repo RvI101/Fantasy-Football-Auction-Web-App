@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { StoreService } from 'src/app/store.service';
 import { Observable } from 'rxjs';
-import { PlayerService } from 'src/app/players.service';
 
 @Component({
   selector: 'app-my-squad',
@@ -12,11 +11,11 @@ export class MySquadComponent implements OnInit {
   @Input() leagueId: string;
   resBids$: Observable<any[]>;
   teams$: Observable<Map<number, string>>;
-  constructor(private store: StoreService, private playerApi: PlayerService) { }
+  constructor(private store: StoreService) { }
 
   ngOnInit() {
     this.resBids$ = this.store.getResolvedBids(this.leagueId);
-    this.teams$ = this.playerApi.getTeamMap();
+    this.teams$ = this.store.getLeagueTeamMap(this.leagueId);
   }
 
   // getShortHandPosition(position: string): string {

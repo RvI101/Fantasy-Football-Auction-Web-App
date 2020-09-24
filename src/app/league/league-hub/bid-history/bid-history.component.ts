@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { StoreService } from 'src/app/store.service';
 import { Observable } from 'rxjs';
-import { PlayerService } from 'src/app/players.service';
 
 @Component({
   selector: 'app-bid-history',
@@ -12,11 +11,11 @@ export class BidHistoryComponent implements OnInit {
   @Input() leagueId: string;
   bidHistory$: Observable<any[]>;
   teams$: Observable<Map<number, string>>;
-  constructor(private store: StoreService, private fplApi: PlayerService) { }
+  constructor(private store: StoreService) { }
 
   ngOnInit() {
     this.bidHistory$ = this.store.getBidHistory(this.leagueId);
-    this.teams$ = this.fplApi.getTeamMap();
+    this.teams$ = this.store.getLeagueTeamMap(this.leagueId);
   }
 
   // getShortHandPosition(position: string): string {

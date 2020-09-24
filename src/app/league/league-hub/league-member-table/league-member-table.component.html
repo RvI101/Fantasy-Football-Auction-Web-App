@@ -1,22 +1,29 @@
 <section class="mb-2">
     <h4>{{ league.name }} Table</h4>
-    <ngb-accordion #a="ngbAccordion">
-        <ngb-panel *ngFor="let member of leagueMembers$ | async" [type]="member.uid === league.admin ? 'primary':'light'">
-            <ng-template ngbPanelHeader>
-                <div class="d-flex align-items-center justify-content-between">
-                    <h5 class="m-0">
-                        {{ member.displayName !== null ? member.displayName : member.uid.slice(-4) }}
-                    </h5>
-                    <span class="badge badge-info">{{ capitalizeWord(member.status) }}</span>
-                    <button ngbPanelToggle class="btn btn-sm btn-outline-info ml-2">Toggle</button>
-                </div>
-            </ng-template>
-            <ng-template ngbPanelContent>
-                <section *ngIf="(teamMap$ | async) as teamMap">
-                    <app-league-member-squad [uid]="member.uid" [leagueId]="league.leagueId" [teamMap]="teamMap">
-                    </app-league-member-squad>
-                </section>
-            </ng-template>
-        </ngb-panel>
-    </ngb-accordion>
+    <section *ngIf="(teamMap$ | async) as teamMap">
+        <div *ngIf="(userId$ | async) as userId">
+            <ngb-accordion #a="ngbAccordion">
+                <ngb-panel *ngFor="let member of leagueMembers$ | async" [type]="member.uid === userId ? 'secondary':'light'">
+                    <ng-template ngbPanelHeader>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="m-0">
+                                {{ member.displayName !== null ? member.displayName : member.uid.slice(-4) }}
+                            </h5>
+                            <div class="d-flex flex-wrap">
+                                <div class="d-flex mr-2" *ngIf="member.uid === league.admin">
+                                    <span class="badge badge-dark">Admin</span>
+                                </div>
+                                <span class="badge badge-dark">{{ capitalizeWord(member.status) }}</span>
+                            </div>
+                            <button ngbPanelToggle class="btn btn-sm btn-outline-dark ml-2">Toggle</button>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbPanelContent>
+                        <app-league-member-squad [uid]="member.uid" [leagueId]="league.leagueId" [teamMap]="teamMap">
+                        </app-league-member-squad>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+        </div>
+    </section>
 </section>

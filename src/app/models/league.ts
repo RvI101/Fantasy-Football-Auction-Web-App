@@ -1,6 +1,7 @@
 import { Player } from './player';
 
 export class League {
+    teamMap: { [k: number]: string; };
     constructor() {
         this.stage = 'bid';
         this.members = [];

@@ -1,6 +1,6 @@
 <section class = "container-fluid" *ngIf="league$ | async as L">
     <h3 class="row">League Hub for {{L.name}}</h3>
-    <ngb-alert class="row" [dismissible]="false" type="info">Current Status : {{ status?.toUpperCase() }}</ngb-alert>
+    <!-- <ngb-alert class="row" [dismissible]="false" type="info">Current Status : {{ status?.toUpperCase() }}</ngb-alert> -->
     <section class="row">
         <app-my-squad class="col-12 col-md-4 my-2" [leagueId]="L.leagueId"></app-my-squad>
         <div class="col-12 col-md-4">

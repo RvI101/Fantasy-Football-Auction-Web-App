@@ -19,8 +19,8 @@ export class LeaguePoolComponent implements OnInit {
   constructor(private store: StoreService, private route: ActivatedRoute, private fileStore: PlayerService) {}
 
   ngOnInit() {
-    this.teams$ = this.fileStore.getTeamMap();
     this.leagueId = this.route.snapshot.paramMap.get('id');
+    this.teams$ = this.store.getLeagueTeamMap(this.leagueId);
     this.players$ = this.store.getPlayers(this.leagueId);
   }
 

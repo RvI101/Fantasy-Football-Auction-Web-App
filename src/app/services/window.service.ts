@@ -4,6 +4,7 @@ import { WINDOW } from '../providers/window.providers';
 @Injectable({
   providedIn: 'root'
 })
+// TODO: Switch to DOCUMENT to allow for server and worker processing.
 export class WindowService {
 
   constructor(@Inject(WINDOW) private window: Window) { }
