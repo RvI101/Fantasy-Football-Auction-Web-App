@@ -6,27 +6,34 @@
         <div class="col-12 col-md-4">
             <app-league-member-table [league]="L" [leagueMembers$]="leagueMembers$">
             </app-league-member-table>
-            <div class="card border-info mb-3" style="max-width: 18rem;">
-                <div class="card-header bg-info"><h5>Team Report</h5></div>
+            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-dark"><h5 class="text-white">Team Report</h5></div>
                 <div class="card-body">
                     <p class="card-text">You own <strong>{{ squadSize$ | async}} Players</strong> and have <strong>{{(money$ | async) | currency:'GBP':'symbol':'1.0-1'}}M</strong> remaining.
-                        You can see already acquired <strong>Players</strong> in the left pane. Look to the right pane to see <strong>Bids</strong>.
+                        You can see already acquired <strong>Players</strong> under <strong>My Squad</strong>.
                     </p>
                 </div>
             </div>
         </div>
-        <ngb-tabset class="col-12 col-md-4" type="pills">
-            <ngb-tab title="Bid Cart">
-                <ng-template ngbTabContent>
-                    <app-bid-cart [leagueKey]="L.leagueId"></app-bid-cart>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Bid History">
-                <ng-template ngbTabContent>
-                    <app-bid-history [leagueId]="L.leagueId"></app-bid-history>
-                </ng-template>
-            </ngb-tab>
-        </ngb-tabset>
+        <section class="col-12 col-md-4 mb-3">
+            <div class="d-flex flex-column">
+                <ul ngbNav #nav="ngbNav" class="nav-pills dark">
+                    <li ngbNavItem>
+                        <a ngbNavLink>{{ BID_CART_TITLE }}</a>
+                        <ng-template ngbNavContent>
+                            <app-bid-cart [leagueKey]="L.leagueId"></app-bid-cart>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                        <a ngbNavLink>{{ BID_HISTORY_TITLE }}</a>
+                        <ng-template ngbNavContent>
+                            <app-bid-history [leagueId]="L.leagueId"></app-bid-history>
+                        </ng-template>
+                    </li>
+                </ul>
+                <div [ngbNavOutlet]="nav"></div>
+            </div>
+        </section>
     </section>
     <button *ngIf="allWait && isAdmin" class="btn btn-info my-md-3" (click)="resolveBids(L.leagueId)">Resolve Bids</button>
     <button *ngIf="canBid" [attr.aria-expanded]="!isOpen" class="btn btn-primary" (click)="isOpen = !isOpen" aria-controls="collapseExample">Player Pool</button>

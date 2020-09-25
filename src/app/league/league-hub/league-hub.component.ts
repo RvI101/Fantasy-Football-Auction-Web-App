@@ -14,6 +14,10 @@ import { isEmpty } from 'lodash-es';
   styleUrls: ['./league-hub.component.css']
 })
 export class LeagueHubComponent implements OnInit, OnDestroy {
+
+  readonly BID_CART_TITLE = 'Bid Cart';
+  readonly BID_HISTORY_TITLE = 'Bid History';
+
   leagueId$: string;
   unsubscribe$ = new Subject();
   league$: Observable<League>;
