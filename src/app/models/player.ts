@@ -24,7 +24,13 @@ export class Player {
             this.jsonData = null;
         }
     }
-
+    // {
+    //     "player_id": "63706",
+    //     "player_name": "Cristiano Ronaldo",
+    //     "team_name": "Portugal",
+    //     "team_id": "110",
+    //     "position": "4"
+    // }
     private deserialize(jsonData: any) {
         // Note this.active will not be listed in keys since it's declared, but not defined
         const keys = Object.keys(this);
@@ -34,11 +40,17 @@ export class Player {
                 this[key] = jsonData[key];
             }
         }
-        if (jsonData.hasOwnProperty('first_name') && jsonData.hasOwnProperty('second_name')) {
-            this.name = jsonData.first_name + ' ' + jsonData.second_name;
+        if (jsonData.hasOwnProperty('player_name')) {
+            this.name = jsonData.player_name;
         }
-        if (jsonData.hasOwnProperty('element_type')) {
-            this.position = Position[jsonData.element_type];
+        if (jsonData.hasOwnProperty('player_id')) {
+            this.id = jsonData.player_id;
+        }
+        if (jsonData.hasOwnProperty('team_id')) {
+            this.team = Number(jsonData.team_id);
+        }
+        if (jsonData.hasOwnProperty('position')) {
+            this.position = Position[Number(jsonData.position)];
         }
         this.status = 'Available';
     }

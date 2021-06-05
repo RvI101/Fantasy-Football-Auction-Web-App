@@ -43,6 +43,7 @@ export class LeaguePoolTableComponent implements OnInit, OnChanges {
       amount,
       name: player.name
     };
+    console.log(tentativeBid);
     this.store.markTentativeBid(this.leagueId, tentativeBid);
   }
 }

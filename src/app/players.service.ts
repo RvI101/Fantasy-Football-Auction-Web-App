@@ -5,10 +5,11 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, zip, of } from 'rxjs';
 import { WindowService } from './services/window.service';
 import { environment } from 'src/environments/environment';
+import { PlayerSource } from './players.source.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class PlayerService {
+export class PlayerService implements PlayerSource {
   path = '/api/bootstrap-static/';
   url: string;
   apiData$: Observable<any>;

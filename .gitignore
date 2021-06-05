@@ -51,6 +51,7 @@ firebase.json
 /src/assets/
 /.firebase
 .firebaserc
+database.rules.json
 
 # Virtual Env
 /env-*

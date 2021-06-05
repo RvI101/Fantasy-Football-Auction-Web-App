@@ -137,7 +137,7 @@ export class StoreService {
       .pipe(
         take(1),
         mergeMap(val => val), // Flattens the array
-        map((player: Player) => new Player(player))
+        map((player: Player) => player as Player)
       );
   }
 
