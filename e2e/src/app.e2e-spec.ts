@@ -10,8 +10,13 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to football-auction!');
+    expect(page.getTitleText()).toEqual('Football Auction');
   });
+
+  it('should create league', () => {
+    page.navigateTo();
+    
+  })
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser

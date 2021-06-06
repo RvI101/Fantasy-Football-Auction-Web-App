@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { StoreService } from 'src/app/store.service';
 import { Observable, Subject, combineLatest } from 'rxjs';
-import { distinct, takeUntil, count, map, reduce, mergeMap, tap} from 'rxjs/operators';
+import { distinct, takeUntil, count, map, reduce, mergeMap, tap, first} from 'rxjs/operators';
 
 @Component({
   selector: 'app-bid-cart',
@@ -19,9 +19,10 @@ export class BidCartComponent implements OnInit, OnDestroy {
   bidNumber = 0;
   balance$: Observable<number>;
   balance: number;
+  teamMap: Map<number, string>;
   constructor(private store: StoreService) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     // console.log(this.leagueKey);
     this.isComplete = false;
     this.hasDuplicate = false;
@@ -58,6 +59,8 @@ export class BidCartComponent implements OnInit, OnDestroy {
       .subscribe(c => {
         this.isComplete = (c[0] === c[1]);
       });
+
+    this.teamMap = await this.store.getLeagueTeamMap(this.leagueKey).pipe(first()).toPromise();
   }
 
   belowThreshold(balance: number): boolean {
@@ -94,5 +97,9 @@ export class BidCartComponent implements OnInit, OnDestroy {
   submitBids(bids: any[]): void {
     console.log(bids);
     this.store.placeBids(this.leagueKey, bids);
+  }
+
+  getTeamName(teamId: number): string {
+    return this.teamMap.get(teamId);
   }
 }

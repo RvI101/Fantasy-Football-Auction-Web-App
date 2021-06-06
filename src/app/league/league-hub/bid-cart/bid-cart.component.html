@@ -23,7 +23,7 @@
                 <p class="mb-1">{{ item.name }}</p>
                 <small>{{ item.amount | currency:'GBP':'symbol':'1.0-1'}}M</small>
             </div>
-            <small class="mb-1">{{ item.player.position }} - {{ item.player.team }}</small>
+            <small class="mb-1">{{ item.player.position }} - {{ getTeamName(item.player.team) }}</small>
         </button>
     </div>
     <button *ngIf="isComplete && !belowThreshold(balance) && squadSpace > 0" class="btn btn-success my-md-3" (click)="submitBids(bids)">Submit</button>

@@ -28,7 +28,7 @@
         <tr *ngFor="let league of memberLeagues | async">
             <td>{{league.leagueId}}</td>
             <td><a [routerLink]="['/leagues', league.leagueId]">{{league.name}}</a></td>
-            <td><button class="btn btn-outline-danger">Leave</button></td>
+            <td><button class="btn btn-outline-danger" disabled=true>Leave</button></td>
         </tr>
     </tbody>
 </table>

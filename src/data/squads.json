@@ -43,20 +43,6 @@
             "position": "3"
         },
         {
-            "player_id": "250106986",
-            "player_name": "Pedro Neto",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "3"
-        },
-        {
-            "player_id": "250075765",
-            "player_name": "Pizzi",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "3"
-        },
-        {
             "player_id": "250143328",
             "player_name": "Pedro Goncalves",
             "team_name": "Portugal",
@@ -85,13 +71,6 @@
             "position": "2"
         },
         {
-            "player_id": "250112122",
-            "player_name": "Francisco Trincao",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "3"
-        },
-        {
             "player_id": "250058220",
             "player_name": "Ruben Dias",
             "team_name": "Portugal",
@@ -106,13 +85,6 @@
             "position": "2"
         },
         {
-            "player_id": "250111288",
-            "player_name": "Paulinho",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "4"
-        },
-        {
             "player_id": "250003853",
             "player_name": "Sergio Oliveira",
             "team_name": "Portugal",
@@ -122,13 +94,6 @@
         {
             "player_id": "250058218",
             "player_name": "Renato Sanches",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "3"
-        },
-        {
-            "player_id": "250024755",
-            "player_name": "Helder Costa",
             "team_name": "Portugal",
             "team_id": "110",
             "position": "3"
@@ -162,20 +127,6 @@
             "position": "3"
         },
         {
-            "player_id": "250075880",
-            "player_name": "Daniel Podence",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "3"
-        },
-        {
-            "player_id": "250017709",
-            "player_name": "Andre Gomes",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "3"
-        },
-        {
             "player_id": "95417",
             "player_name": "Pepe",
             "team_name": "Portugal",
@@ -204,27 +155,6 @@
             "position": "1"
         },
         {
-            "player_id": "1907940",
-            "player_name": "Cedric",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "2"
-        },
-        {
-            "player_id": "250089228",
-            "player_name": "Rafael Leao",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "4"
-        },
-        {
-            "player_id": "1907928",
-            "player_name": "Mario Rui",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "2"
-        },
-        {
             "player_id": "101788",
             "player_name": "Jose Fonte",
             "team_name": "Portugal",
@@ -246,60 +176,11 @@
             "position": "2"
         },
         {
-            "player_id": "250092718",
-            "player_name": "Ruben Semedo",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "2"
-        },
-        {
-            "player_id": "250034990",
-            "player_name": "Luis Neto",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "2"
-        },
-        {
-            "player_id": "250070299",
-            "player_name": "Domingos Duarte",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "2"
-        },
-        {
-            "player_id": "250064239",
-            "player_name": "Jose Sa",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "1"
-        },
-        {
             "player_id": "250062141",
             "player_name": "Rui Silva",
             "team_name": "Portugal",
             "team_id": "110",
             "position": "1"
-        },
-        {
-            "player_id": "250066118",
-            "player_name": "Ferro",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "2"
-        },
-        {
-            "player_id": "250024742",
-            "player_name": "Bruno Varela",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "1"
-        },
-        {
-            "player_id": "250039787",
-            "player_name": "Daniel Carrico",
-            "team_name": "Portugal",
-            "team_id": "110",
-            "position": "2"
         }
     ],
     "43": [
@@ -339,13 +220,6 @@
             "position": "3"
         },
         {
-            "player_id": "250042781",
-            "player_name": "Anthony Martial",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "4"
-        },
-        {
             "player_id": "250066886",
             "player_name": "Ousmane Dembele",
             "team_name": "France",
@@ -365,13 +239,6 @@
             "team_name": "France",
             "team_id": "43",
             "position": "4"
-        },
-        {
-            "player_id": "250062148",
-            "player_name": "Nabil Fekir",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "3"
         },
         {
             "player_id": "250054829",
@@ -465,64 +332,8 @@
             "position": "2"
         },
         {
-            "player_id": "250014003",
-            "player_name": "Samuel Umtiti",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "2"
-        },
-        {
-            "player_id": "250112803",
-            "player_name": "Ferland Mendy",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "2"
-        },
-        {
-            "player_id": "250112778",
-            "player_name": "Tanguy Ndombele",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "3"
-        },
-        {
             "player_id": "103722",
             "player_name": "Moussa Sissoko",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "3"
-        },
-        {
-            "player_id": "250074007",
-            "player_name": "Houssem Aouar",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "3"
-        },
-        {
-            "player_id": "250024981",
-            "player_name": "Benjamin Mendy",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "2"
-        },
-        {
-            "player_id": "250076648",
-            "player_name": "Jonathan Ikone",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "3"
-        },
-        {
-            "player_id": "250128270",
-            "player_name": "Eduardo Camavinga",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "3"
-        },
-        {
-            "player_id": "250012024",
-            "player_name": "Steven Nzonzi",
             "team_name": "France",
             "team_id": "43",
             "position": "3"
@@ -549,39 +360,11 @@
             "position": "2"
         },
         {
-            "player_id": "250013997",
-            "player_name": "Alphonse Areola",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "1"
-        },
-        {
-            "player_id": "250079545",
-            "player_name": "Dayot Upamecano",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "2"
-        },
-        {
             "player_id": "250042780",
             "player_name": "Mike Maignan",
             "team_name": "France",
             "team_id": "43",
             "position": "1"
-        },
-        {
-            "player_id": "93297",
-            "player_name": "Benoit Costil",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "1"
-        },
-        {
-            "player_id": "250061132",
-            "player_name": "Ruben Aguilar",
-            "team_name": "France",
-            "team_id": "43",
-            "position": "2"
         }
     ],
     "39": [
@@ -635,20 +418,6 @@
             "position": "3"
         },
         {
-            "player_id": "250067629",
-            "player_name": "Tammy Abraham",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "4"
-        },
-        {
-            "player_id": "250043859",
-            "player_name": "Jesse Lingard",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "3"
-        },
-        {
             "player_id": "250111030",
             "player_name": "Dominic Calvert-Lewin",
             "team_name": "England",
@@ -668,34 +437,6 @@
             "team_name": "England",
             "team_id": "39",
             "position": "2"
-        },
-        {
-            "player_id": "250066328",
-            "player_name": "Danny Ings",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "4"
-        },
-        {
-            "player_id": "250116767",
-            "player_name": "Mason Greenwood",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "4"
-        },
-        {
-            "player_id": "250104090",
-            "player_name": "Callum Hudson-Odoi",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "3"
-        },
-        {
-            "player_id": "250150887",
-            "player_name": "Ollie Watkins",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "4"
         },
         {
             "player_id": "250010260",
@@ -761,13 +502,6 @@
             "position": "2"
         },
         {
-            "player_id": "250024797",
-            "player_name": "James Ward-Prowse",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "3"
-        },
-        {
             "player_id": "250064823",
             "player_name": "Dean Henderson",
             "team_name": "England",
@@ -789,22 +523,8 @@
             "position": "2"
         },
         {
-            "player_id": "250118266",
-            "player_name": "Nick Pope",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "1"
-        },
-        {
             "player_id": "250110362",
             "player_name": "Reece James",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "2"
-        },
-        {
-            "player_id": "250050416",
-            "player_name": "Eric Dier",
             "team_name": "England",
             "team_id": "39",
             "position": "2"
@@ -817,36 +537,8 @@
             "position": "2"
         },
         {
-            "player_id": "250133903",
-            "player_name": "Ben Godfrey",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "2"
-        },
-        {
             "player_id": "250133856",
             "player_name": "Tyrone Mings",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "2"
-        },
-        {
-            "player_id": "250016550",
-            "player_name": "Michael Keane",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "2"
-        },
-        {
-            "player_id": "250105912",
-            "player_name": "Aaron Ramsdale",
-            "team_name": "England",
-            "team_id": "39",
-            "position": "1"
-        },
-        {
-            "player_id": "250156002",
-            "player_name": "Ben White",
             "team_name": "England",
             "team_id": "39",
             "position": "2"
@@ -868,13 +560,6 @@
             "position": "4"
         },
         {
-            "player_id": "250098778",
-            "player_name": "Krzysztof Pi\u0105tek",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "4"
-        },
-        {
             "player_id": "250043124",
             "player_name": "Arkadiusz Milik",
             "team_name": "Poland",
@@ -889,13 +574,6 @@
             "position": "3"
         },
         {
-            "player_id": "108235",
-            "player_name": "Kamil Grosicki",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "3"
-        },
-        {
             "player_id": "250005583",
             "player_name": "Mateusz Klich",
             "team_name": "Poland",
@@ -905,13 +583,6 @@
         {
             "player_id": "250042409",
             "player_name": "Karol Linetty",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "3"
-        },
-        {
-            "player_id": "250049835",
-            "player_name": "Damian K\u0105dzior",
             "team_name": "Poland",
             "team_id": "109",
             "position": "3"
@@ -952,32 +623,11 @@
             "position": "3"
         },
         {
-            "player_id": "250109375",
-            "player_name": "Micha\u0142 Karbownik",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "3"
-        },
-        {
-            "player_id": "250087872",
-            "player_name": "Sebastian Szymanski",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "3"
-        },
-        {
             "player_id": "250083605",
             "player_name": "Karol Swiderski",
             "team_name": "Poland",
             "team_id": "109",
             "position": "4"
-        },
-        {
-            "player_id": "250085160",
-            "player_name": "Jacek Goralski",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "3"
         },
         {
             "player_id": "250107490",
@@ -1001,13 +651,6 @@
             "position": "2"
         },
         {
-            "player_id": "250133799",
-            "player_name": "Bartosz Slisz",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "3"
-        },
-        {
             "player_id": "103881",
             "player_name": "Maciej Rybus",
             "team_name": "Poland",
@@ -1027,20 +670,6 @@
             "team_name": "Poland",
             "team_id": "109",
             "position": "1"
-        },
-        {
-            "player_id": "250138612",
-            "player_name": "Sebastian Kowalczyk",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "3"
-        },
-        {
-            "player_id": "250121402",
-            "player_name": "Arkadiusz Reca",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
         },
         {
             "player_id": "250070827",
@@ -1085,62 +714,6 @@
             "position": "2"
         },
         {
-            "player_id": "250075834",
-            "player_name": "Krystian Bielik",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
-        },
-        {
-            "player_id": "250011220",
-            "player_name": "Marcin Kaminski",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
-        },
-        {
-            "player_id": "250081799",
-            "player_name": "Robert Gumny",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
-        },
-        {
-            "player_id": "250102242",
-            "player_name": "Sebastian Walukiewicz",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
-        },
-        {
-            "player_id": "250083604",
-            "player_name": "Rafa\u0142 Augustyniak",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
-        },
-        {
-            "player_id": "250056264",
-            "player_name": "Pawe\u0142 Bochniewicz",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
-        },
-        {
-            "player_id": "105666",
-            "player_name": "Artur Jedrzejczyk",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
-        },
-        {
-            "player_id": "250137152",
-            "player_name": "Karol Niemczycki",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "1"
-        },
-        {
             "player_id": "250127492",
             "player_name": "Kamil Pi\u0105tkowski",
             "team_name": "Poland",
@@ -1160,27 +733,6 @@
             "team_name": "Poland",
             "team_id": "109",
             "position": "1"
-        },
-        {
-            "player_id": "250066636",
-            "player_name": "Bart\u0142omiej Dr\u0105gowski",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "1"
-        },
-        {
-            "player_id": "250087877",
-            "player_name": "Rados\u0142aw Majecki",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "1"
-        },
-        {
-            "player_id": "250141758",
-            "player_name": "Alan Czerwinski",
-            "team_name": "Poland",
-            "team_id": "109",
-            "position": "2"
         }
     ],
     "13": [
@@ -1225,13 +777,6 @@
             "team_name": "Belgium",
             "team_id": "13",
             "position": "3"
-        },
-        {
-            "player_id": "250042610",
-            "player_name": "Divock Origi",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "4"
         },
         {
             "player_id": "1902165",
@@ -1297,20 +842,6 @@
             "position": "3"
         },
         {
-            "player_id": "250064531",
-            "player_name": "Adnan Januzaj",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "3"
-        },
-        {
-            "player_id": "250108595",
-            "player_name": "Yari Verschaeren",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "3"
-        },
-        {
             "player_id": "250029318",
             "player_name": "Thomas Meunier",
             "team_name": "Belgium",
@@ -1353,13 +884,6 @@
             "position": "2"
         },
         {
-            "player_id": "250101735",
-            "player_name": "Alexis Saelemaekers",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "3"
-        },
-        {
             "player_id": "71982",
             "player_name": "Thomas Vermaelen",
             "team_name": "Belgium",
@@ -1388,50 +912,8 @@
             "position": "2"
         },
         {
-            "player_id": "250052801",
-            "player_name": "Thomas Foket",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "2"
-        },
-        {
-            "player_id": "250053044",
-            "player_name": "Brandon Mechele",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "2"
-        },
-        {
-            "player_id": "250107509",
-            "player_name": "Elias Cobbaut",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "2"
-        },
-        {
-            "player_id": "250003911",
-            "player_name": "Koen Casteels",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "1"
-        },
-        {
             "player_id": "250007046",
             "player_name": "Matz Sels",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "1"
-        },
-        {
-            "player_id": "250081543",
-            "player_name": "Gaetan Coucke",
-            "team_name": "Belgium",
-            "team_id": "13",
-            "position": "1"
-        },
-        {
-            "player_id": "250003912",
-            "player_name": "Thomas Kaminski",
             "team_name": "Belgium",
             "team_id": "13",
             "position": "1"
@@ -1458,13 +940,6 @@
             "team_name": "Netherlands",
             "team_id": "95",
             "position": "4"
-        },
-        {
-            "player_id": "250066551",
-            "player_name": "Steven Bergwijn",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
         },
         {
             "player_id": "250078682",
@@ -1495,29 +970,8 @@
             "position": "3"
         },
         {
-            "player_id": "68721",
-            "player_name": "Ryan Babel",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
-            "player_id": "250043137",
-            "player_name": "Virgil van Dijk",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "2"
-        },
-        {
             "player_id": "250081207",
             "player_name": "Donny van de Beek",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
-            "player_id": "250066979",
-            "player_name": "Anwar El Ghazi",
             "team_name": "Netherlands",
             "team_id": "95",
             "position": "3"
@@ -1537,25 +991,11 @@
             "position": "4"
         },
         {
-            "player_id": "250087443",
-            "player_name": "Justin Kluivert",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
             "player_id": "250101728",
             "player_name": "Jurrien Timber",
             "team_name": "Netherlands",
             "team_id": "95",
             "position": "3"
-        },
-        {
-            "player_id": "250004462",
-            "player_name": "Jasper Cillessen",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "1"
         },
         {
             "player_id": "250013855",
@@ -1600,39 +1040,11 @@
             "position": "2"
         },
         {
-            "player_id": "250105284",
-            "player_name": "Calvin Stengs",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
-            "player_id": "250014667",
-            "player_name": "Davy Propper",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
-            "player_id": "250070400",
-            "player_name": "Hans Hateboer",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "2"
-        },
-        {
             "player_id": "250007223",
             "player_name": "Joel Veltman",
             "team_name": "Netherlands",
             "team_id": "95",
             "position": "2"
-        },
-        {
-            "player_id": "250104070",
-            "player_name": "Myron Boadu",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "4"
         },
         {
             "player_id": "250081553",
@@ -1663,34 +1075,6 @@
             "position": "3"
         },
         {
-            "player_id": "250027015",
-            "player_name": "Tonny Vilhena",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
-            "player_id": "108916",
-            "player_name": "Leroy Fer",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
-            "player_id": "250097271",
-            "player_name": "Pablo Rosario",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
-            "player_id": "250005342",
-            "player_name": "Kevin Strootman",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "3"
-        },
-        {
             "player_id": "250080520",
             "player_name": "Maarten Stekelenburg",
             "team_name": "Netherlands",
@@ -1707,41 +1091,6 @@
         {
             "player_id": "250097317",
             "player_name": "Owen Wijndal",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "2"
-        },
-        {
-            "player_id": "108911",
-            "player_name": "Jeroen Zoet",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "1"
-        },
-        {
-            "player_id": "250067334",
-            "player_name": "Rick Karsdorp",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "2"
-        },
-        {
-            "player_id": "250042717",
-            "player_name": "Kenny Tete",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "2"
-        },
-        {
-            "player_id": "250087967",
-            "player_name": "Jeremiah St. Juste",
-            "team_name": "Netherlands",
-            "team_id": "95",
-            "position": "2"
-        },
-        {
-            "player_id": "250101719",
-            "player_name": "Sven Botman",
             "team_name": "Netherlands",
             "team_id": "95",
             "position": "2"
@@ -1784,13 +1133,6 @@
             "position": "3"
         },
         {
-            "player_id": "250006202",
-            "player_name": "Stephan El Shaarawy",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
             "player_id": "250090398",
             "player_name": "Federico Chiesa",
             "team_name": "Italy",
@@ -1798,29 +1140,8 @@
             "position": "3"
         },
         {
-            "player_id": "250050381",
-            "player_name": "Matteo Politano",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "4"
-        },
-        {
-            "player_id": "250087919",
-            "player_name": "Moise Kean",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "4"
-        },
-        {
             "player_id": "250066739",
             "player_name": "Nicolo Barella",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
-            "player_id": "250107324",
-            "player_name": "Nicolo Zaniolo",
             "team_name": "Italy",
             "team_id": "66",
             "position": "3"
@@ -1833,22 +1154,8 @@
             "position": "3"
         },
         {
-            "player_id": "250112400",
-            "player_name": "Riccardo Orsolini",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
             "player_id": "250006200",
             "player_name": "Marco Verratti",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
-            "player_id": "250066467",
-            "player_name": "Vincenzo Grifo",
             "team_name": "Italy",
             "team_id": "66",
             "position": "3"
@@ -1861,13 +1168,6 @@
             "position": "2"
         },
         {
-            "player_id": "250126537",
-            "player_name": "Kevin Lasagna",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "4"
-        },
-        {
             "player_id": "250067749",
             "player_name": "Jorginho",
             "team_name": "Italy",
@@ -1875,22 +1175,8 @@
             "position": "3"
         },
         {
-            "player_id": "250121401",
-            "player_name": "Matteo Pessina",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
             "player_id": "250058759",
             "player_name": "Domenico Berardi",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
-            "player_id": "1909569",
-            "player_name": "Roberto Soriano",
             "team_name": "Italy",
             "team_id": "66",
             "position": "3"
@@ -1952,13 +1238,6 @@
             "position": "2"
         },
         {
-            "player_id": "250117809",
-            "player_name": "Sandro Tonali",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
             "player_id": "250100056",
             "player_name": "Emerson",
             "team_name": "Italy",
@@ -1966,50 +1245,8 @@
             "position": "2"
         },
         {
-            "player_id": "250034835",
-            "player_name": "Francesco Caputo",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "4"
-        },
-        {
-            "player_id": "250024083",
-            "player_name": "Mattia De Sciglio",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
-        },
-        {
-            "player_id": "250138434",
-            "player_name": "Gaetano Castrovilli",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
-            "player_id": "250017815",
-            "player_name": "Cristiano Biraghi",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
-        },
-        {
             "player_id": "250052957",
             "player_name": "Francesco Acerbi",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
-        },
-        {
-            "player_id": "250068942",
-            "player_name": "Rolando Mandragora",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "3"
-        },
-        {
-            "player_id": "250047045",
-            "player_name": "Alessio Romagnoli",
             "team_name": "Italy",
             "team_id": "66",
             "position": "2"
@@ -2029,25 +1266,11 @@
             "position": "1"
         },
         {
-            "player_id": "250075982",
-            "player_name": "Gianluca Mancini",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
-        },
-        {
             "player_id": "250066753",
             "player_name": "Alex Meret",
             "team_name": "Italy",
             "team_id": "66",
             "position": "1"
-        },
-        {
-            "player_id": "250088146",
-            "player_name": "Luca Pellegrini",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
         },
         {
             "player_id": "250091199",
@@ -2057,36 +1280,8 @@
             "position": "2"
         },
         {
-            "player_id": "250122732",
-            "player_name": "Manuel Lazzari",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
-        },
-        {
             "player_id": "250112488",
             "player_name": "Rafael Toloi",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
-        },
-        {
-            "player_id": "250026951",
-            "player_name": "Alessio Cragno",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "1"
-        },
-        {
-            "player_id": "250021898",
-            "player_name": "Armando Izzo",
-            "team_name": "Italy",
-            "team_id": "66",
-            "position": "2"
-        },
-        {
-            "player_id": "250109242",
-            "player_name": "Gian Marco Ferrari",
             "team_name": "Italy",
             "team_id": "66",
             "position": "2"
@@ -2136,20 +1331,6 @@
             "position": "4"
         },
         {
-            "player_id": "250046522",
-            "player_name": "Julian Brandt",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
-            "player_id": "250026763",
-            "player_name": "Julian Draxler",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
             "player_id": "250005335",
             "player_name": "Ilkay Gundogan",
             "team_name": "Germany",
@@ -2157,22 +1338,8 @@
             "position": "3"
         },
         {
-            "player_id": "250011791",
-            "player_name": "Marco Reus",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
             "player_id": "103147",
             "player_name": "Toni Kroos",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
-            "player_id": "250014343",
-            "player_name": "Amin Younes",
             "team_name": "Germany",
             "team_id": "47",
             "position": "3"
@@ -2197,13 +1364,6 @@
             "team_name": "Germany",
             "team_id": "47",
             "position": "3"
-        },
-        {
-            "player_id": "250058281",
-            "player_name": "Luca Waldschmidt",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "4"
         },
         {
             "player_id": "250041781",
@@ -2241,34 +1401,6 @@
             "position": "2"
         },
         {
-            "player_id": "250080523",
-            "player_name": "Jonas Hector",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "2"
-        },
-        {
-            "player_id": "250007631",
-            "player_name": "Marc-Andre ter Stegen",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "1"
-        },
-        {
-            "player_id": "250002180",
-            "player_name": "Sebastian Rudy",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
-            "player_id": "250078643",
-            "player_name": "Nadiem Amiri",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
             "player_id": "250112854",
             "player_name": "Florian Neuhaus",
             "team_name": "Germany",
@@ -2283,13 +1415,6 @@
             "position": "2"
         },
         {
-            "player_id": "250074777",
-            "player_name": "Mahmoud Dahoud",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
             "player_id": "250055962",
             "player_name": "Matthias Ginter",
             "team_name": "Germany",
@@ -2302,48 +1427,6 @@
             "team_name": "Germany",
             "team_id": "47",
             "position": "2"
-        },
-        {
-            "player_id": "250139445",
-            "player_name": "Florian Wirtz",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
-            "player_id": "250055663",
-            "player_name": "Thilo Kehrer",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "2"
-        },
-        {
-            "player_id": "250112852",
-            "player_name": "Maximilian Eggestein",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
-        },
-        {
-            "player_id": "250014332",
-            "player_name": "Nico Schulz",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "2"
-        },
-        {
-            "player_id": "250055660",
-            "player_name": "Jonathan Tah",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "2"
-        },
-        {
-            "player_id": "250090770",
-            "player_name": "Suat Serdar",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "3"
         },
         {
             "player_id": "250007620",
@@ -2386,27 +1469,6 @@
             "team_name": "Germany",
             "team_id": "47",
             "position": "2"
-        },
-        {
-            "player_id": "250050084",
-            "player_name": "Niklas Stark",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "2"
-        },
-        {
-            "player_id": "250058258",
-            "player_name": "Benjamin Henrichs",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "2"
-        },
-        {
-            "player_id": "250063666",
-            "player_name": "Philipp Max",
-            "team_name": "Germany",
-            "team_id": "47",
-            "position": "2"
         }
     ],
     "144": [
@@ -2432,13 +1494,6 @@
             "position": "3"
         },
         {
-            "player_id": "250022171",
-            "player_name": "Hal Robson-Kanu",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "4"
-        },
-        {
             "player_id": "250130512",
             "player_name": "Kieffer Moore",
             "team_name": "Wales",
@@ -2458,27 +1513,6 @@
             "team_name": "Wales",
             "team_id": "144",
             "position": "3"
-        },
-        {
-            "player_id": "250127519",
-            "player_name": "Brennan Johnson",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
-        },
-        {
-            "player_id": "250022309",
-            "player_name": "Tom Lawrence",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
-        },
-        {
-            "player_id": "1906115",
-            "player_name": "Sam Vokes",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "4"
         },
         {
             "player_id": "250079203",
@@ -2509,20 +1543,6 @@
             "position": "3"
         },
         {
-            "player_id": "250065201",
-            "player_name": "George Thomas",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
-        },
-        {
-            "player_id": "250079177",
-            "player_name": "Ben Woodburn",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
-        },
-        {
             "player_id": "250065196",
             "player_name": "Joe Morrell",
             "team_name": "Wales",
@@ -2537,22 +1557,8 @@
             "position": "1"
         },
         {
-            "player_id": "250091952",
-            "player_name": "Rabbi Matondo",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
-        },
-        {
             "player_id": "250097090",
             "player_name": "Ethan Ampadu",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
-        },
-        {
-            "player_id": "250079192",
-            "player_name": "Mark Harris",
             "team_name": "Wales",
             "team_id": "144",
             "position": "3"
@@ -2563,20 +1569,6 @@
             "team_name": "Wales",
             "team_id": "144",
             "position": "2"
-        },
-        {
-            "player_id": "250055914",
-            "player_name": "Joshua Sheehan",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
-        },
-        {
-            "player_id": "250128752",
-            "player_name": "Will Vaulks",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "3"
         },
         {
             "player_id": "250007344",
@@ -2602,13 +1594,6 @@
         {
             "player_id": "250116809",
             "player_name": "Rhys Norrington-Davies",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "2"
-        },
-        {
-            "player_id": "250085008",
-            "player_name": "James Lawrence",
             "team_name": "Wales",
             "team_id": "144",
             "position": "2"
@@ -2658,20 +1643,6 @@
         {
             "player_id": "250012939",
             "player_name": "Danny Ward",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "1"
-        },
-        {
-            "player_id": "250091949",
-            "player_name": "Brandon Cooper",
-            "team_name": "Wales",
-            "team_id": "144",
-            "position": "2"
-        },
-        {
-            "player_id": "74898",
-            "player_name": "Owain Fon Williams",
             "team_name": "Wales",
             "team_id": "144",
             "position": "1"
@@ -2728,74 +1699,11 @@
             "position": "4"
         },
         {
-            "player_id": "250055142",
-            "player_name": "Marcus Ingvartsen",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "4"
-        },
-        {
-            "player_id": "250013182",
-            "player_name": "Nicolai J\u00f8rgensen",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "4"
-        },
-        {
-            "player_id": "70048",
-            "player_name": "Lasse Schone",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
-        },
-        {
-            "player_id": "250082769",
-            "player_name": "Pione Sisto",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
-        },
-        {
-            "player_id": "250004106",
-            "player_name": "Rasmus Falk",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
-        },
-        {
             "player_id": "250041664",
             "player_name": "Andreas Cornelius",
             "team_name": "Denmark",
             "team_id": "35",
             "position": "4"
-        },
-        {
-            "player_id": "250059199",
-            "player_name": "Lukas Lerager",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
-        },
-        {
-            "player_id": "107525",
-            "player_name": "Christian Gytkjaer",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "4"
-        },
-        {
-            "player_id": "250112291",
-            "player_name": "Philip Billing",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
-        },
-        {
-            "player_id": "250022865",
-            "player_name": "Lucas Andersen",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
         },
         {
             "player_id": "250080451",
@@ -2835,20 +1743,6 @@
         {
             "player_id": "250022797",
             "player_name": "Christian N\u00f8rgaard",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
-        },
-        {
-            "player_id": "250077958",
-            "player_name": "Jacob Bruun Larsen",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "3"
-        },
-        {
-            "player_id": "250041667",
-            "player_name": "Jens J\u00f8nsson",
             "team_name": "Denmark",
             "team_id": "35",
             "position": "3"
@@ -2938,20 +1832,6 @@
             "position": "2"
         },
         {
-            "player_id": "250007221",
-            "player_name": "Henrik Dalsgaard",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "2"
-        },
-        {
-            "player_id": "250145629",
-            "player_name": "Alexander Bah",
-            "team_name": "Denmark",
-            "team_id": "35",
-            "position": "2"
-        },
-        {
             "player_id": "1905874",
             "player_name": "Nicolai Boilesen",
             "team_name": "Denmark",
@@ -2982,20 +1862,6 @@
             "position": "4"
         },
         {
-            "player_id": "250080570",
-            "player_name": "Marco Asensio",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "250014558",
-            "player_name": "Rodrigo",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "4"
-        },
-        {
             "player_id": "250081720",
             "player_name": "Dani Olmo",
             "team_name": "Spain",
@@ -3003,36 +1869,8 @@
             "position": "3"
         },
         {
-            "player_id": "250017725",
-            "player_name": "Saul Niguez",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "250117471",
-            "player_name": "Ansu Fati",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "4"
-        },
-        {
-            "player_id": "93649",
-            "player_name": "Sergio Ramos",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
-        },
-        {
             "player_id": "1909917",
             "player_name": "Koke",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "250086709",
-            "player_name": "Dani Ceballos",
             "team_name": "Spain",
             "team_id": "122",
             "position": "3"
@@ -3043,13 +1881,6 @@
             "team_name": "Spain",
             "team_id": "122",
             "position": "3"
-        },
-        {
-            "player_id": "109132",
-            "player_name": "Iago Aspas",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "4"
         },
         {
             "player_id": "250074565",
@@ -3071,13 +1902,6 @@
             "team_name": "Spain",
             "team_id": "122",
             "position": "3"
-        },
-        {
-            "player_id": "250024448",
-            "player_name": "Dani Carvajal",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
         },
         {
             "player_id": "250027046",
@@ -3110,27 +1934,6 @@
         {
             "player_id": "250002704",
             "player_name": "Sergio Busquets",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "250006092",
-            "player_name": "Sergi Roberto",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "69173",
-            "player_name": "Jesus Navas",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
-        },
-        {
-            "player_id": "250080572",
-            "player_name": "Mikel Merino",
             "team_name": "Spain",
             "team_id": "122",
             "position": "3"
@@ -3178,41 +1981,6 @@
             "position": "1"
         },
         {
-            "player_id": "250106967",
-            "player_name": "Bryan Gil",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "250076708",
-            "player_name": "Sergio Reguilon",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
-        },
-        {
-            "player_id": "250079402",
-            "player_name": "Oscar Rodriguez",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "1906765",
-            "player_name": "Sergio Canales",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "3"
-        },
-        {
-            "player_id": "250040471",
-            "player_name": "Inigo Martinez",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
-        },
-        {
             "player_id": "250103561",
             "player_name": "Eric Garcia",
             "team_name": "Spain",
@@ -3238,330 +2006,6 @@
             "player_name": "Diego Llorente",
             "team_name": "Spain",
             "team_id": "122",
-            "position": "2"
-        },
-        {
-            "player_id": "250086637",
-            "player_name": "Pau Lopez",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "1"
-        },
-        {
-            "player_id": "250039900",
-            "player_name": "Kepa",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "1"
-        },
-        {
-            "player_id": "250047082",
-            "player_name": "Hector Bellerin",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
-        },
-        {
-            "player_id": "150562676",
-            "player_name": "Pedro Porro",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
-        },
-        {
-            "player_id": "250076108",
-            "player_name": "Unai Nunez",
-            "team_name": "Spain",
-            "team_id": "122",
-            "position": "2"
-        }
-    ],
-    "127": [
-        {
-            "player_id": "59217",
-            "player_name": "Zlatan Ibrahimovic",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "97688",
-            "player_name": "Marcus Berg",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "250089868",
-            "player_name": "Alexander Isak",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "250050478",
-            "player_name": "Robin Quaison",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "250013469",
-            "player_name": "Emil Forsberg",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250043160",
-            "player_name": "Sebastian Andersson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "250103985",
-            "player_name": "Dejan Kulusevski",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250024171",
-            "player_name": "Viktor Claesson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250005577",
-            "player_name": "John Guidetti",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "62487",
-            "player_name": "Sebastian Larsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250105737",
-            "player_name": "Jesper Karlsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250066438",
-            "player_name": "Isaac Kiese Thelin",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "102351",
-            "player_name": "Albin Ekdal",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250110384",
-            "player_name": "Ken Sema",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250076479",
-            "player_name": "Mattias Svanberg",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250055905",
-            "player_name": "Victor Lindelof",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250040953",
-            "player_name": "Kristoffer Olsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250008395",
-            "player_name": "Jimmy Durmaz",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250090718",
-            "player_name": "Jordan Larsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "4"
-        },
-        {
-            "player_id": "250024701",
-            "player_name": "Ludwig Augustinsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250021116",
-            "player_name": "Sam Larsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "97687",
-            "player_name": "Mikael Lustig",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "99924",
-            "player_name": "Gustav Svensson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250055908",
-            "player_name": "Alexander Fransson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "108226",
-            "player_name": "Martin Olsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250050840",
-            "player_name": "Marcus Rohden",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "95669",
-            "player_name": "Andreas Granqvist",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250049713",
-            "player_name": "Robin Olsen",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "1"
-        },
-        {
-            "player_id": "250034742",
-            "player_name": "Filip Helander",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250121175",
-            "player_name": "Jens-Lys Cajuste",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "3"
-        },
-        {
-            "player_id": "250005567",
-            "player_name": "Mattias Johansson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250051788",
-            "player_name": "Sebastian Holmen",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250071301",
-            "player_name": "Carl Starfelt",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "1908319",
-            "player_name": "Pontus Jansson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250005387",
-            "player_name": "Karl-Johan Johnsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "1"
-        },
-        {
-            "player_id": "250085186",
-            "player_name": "Sotirios Papagiannopoulos",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250059152",
-            "player_name": "Joakim Nilsson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "250000108",
-            "player_name": "Kristoffer Nordfeldt",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "1"
-        },
-        {
-            "player_id": "250049881",
-            "player_name": "Emil Krafth",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "1907505",
-            "player_name": "Marcus Danielson",
-            "team_name": "Sweden",
-            "team_id": "127",
-            "position": "2"
-        },
-        {
-            "player_id": "1904230",
-            "player_name": "Pierre Bengtsson",
-            "team_name": "Sweden",
-            "team_id": "127",
             "position": "2"
         }
     ],
@@ -3609,22 +2053,8 @@
             "position": "3"
         },
         {
-            "player_id": "250043080",
-            "player_name": "Antonio Colak",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "4"
-        },
-        {
             "player_id": "250024176",
             "player_name": "Mislav Orsic",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "3"
-        },
-        {
-            "player_id": "250104878",
-            "player_name": "Kristijan Lovric",
             "team_name": "Croatia",
             "team_id": "56370",
             "position": "3"
@@ -3646,13 +2076,6 @@
         {
             "player_id": "250040564",
             "player_name": "Marcelo Brozovic",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "3"
-        },
-        {
-            "player_id": "250084075",
-            "player_name": "Toma Basic",
             "team_name": "Croatia",
             "team_id": "56370",
             "position": "3"
@@ -3714,13 +2137,6 @@
             "position": "3"
         },
         {
-            "player_id": "250071671",
-            "player_name": "Marko Rog",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "3"
-        },
-        {
             "player_id": "250042625",
             "player_name": "Dominik Livakovic",
             "team_name": "Croatia",
@@ -3775,41 +2191,6 @@
             "team_name": "Croatia",
             "team_id": "56370",
             "position": "2"
-        },
-        {
-            "player_id": "250056074",
-            "player_name": "Ivo Grbic",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "1"
-        },
-        {
-            "player_id": "250118467",
-            "player_name": "Filip Uremovic",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "2"
-        },
-        {
-            "player_id": "250042622",
-            "player_name": "Tin Jedvaj",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "2"
-        },
-        {
-            "player_id": "250110407",
-            "player_name": "Marin Pongracic",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "2"
-        },
-        {
-            "player_id": "250098496",
-            "player_name": "Dario Melnjak",
-            "team_name": "Croatia",
-            "team_id": "56370",
-            "position": "2"
         }
     ],
     "57166": [
@@ -3821,25 +2202,11 @@
             "position": "3"
         },
         {
-            "player_id": "1905873",
-            "player_name": "Yevhen Konoplyanka",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
             "player_id": "250043090",
             "player_name": "Ruslan Malinovskyi",
             "team_name": "Ukraine",
             "team_id": "57166",
             "position": "3"
-        },
-        {
-            "player_id": "103841",
-            "player_name": "Artem Kravets",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "4"
         },
         {
             "player_id": "250047100",
@@ -3884,36 +2251,8 @@
             "position": "4"
         },
         {
-            "player_id": "250073009",
-            "player_name": "Ivan Petriak",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "4"
-        },
-        {
-            "player_id": "250036166",
-            "player_name": "Junior Moraes",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "4"
-        },
-        {
             "player_id": "250008250",
             "player_name": "Serhiy Sydorchuk",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250043607",
-            "player_name": "Oleksandr Andriievskyi",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250091870",
-            "player_name": "Bogdan Lednev",
             "team_name": "Ukraine",
             "team_id": "57166",
             "position": "3"
@@ -3940,20 +2279,6 @@
             "position": "3"
         },
         {
-            "player_id": "250066779",
-            "player_name": "Bogdan Mykhaylichenko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250056865",
-            "player_name": "Viktor Kovalenko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
             "player_id": "250056861",
             "player_name": "Oleksandr Zinchenko",
             "team_name": "Ukraine",
@@ -3961,36 +2286,8 @@
             "position": "2"
         },
         {
-            "player_id": "107386",
-            "player_name": "Yevhen Shakhov",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
             "player_id": "250100997",
             "player_name": "Artem Dovbyk",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "4"
-        },
-        {
-            "player_id": "250082625",
-            "player_name": "Marian Shved",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "4"
-        },
-        {
-            "player_id": "250080483",
-            "player_name": "Vladyslav Kochergin",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250024131",
-            "player_name": "Vladyslav Kulach",
             "team_name": "Ukraine",
             "team_id": "57166",
             "position": "4"
@@ -4001,41 +2298,6 @@
             "team_name": "Ukraine",
             "team_id": "57166",
             "position": "1"
-        },
-        {
-            "player_id": "250087701",
-            "player_name": "Volodymyr Shepeliev",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250112969",
-            "player_name": "Artem Bondarenko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250064687",
-            "player_name": "Serhiy Bolbat",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250024124",
-            "player_name": "Vitaliy Buyalskiy",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
-        },
-        {
-            "player_id": "250042640",
-            "player_name": "Ihor Kharatin",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "3"
         },
         {
             "player_id": "250004740",
@@ -4064,13 +2326,6 @@
             "team_name": "Ukraine",
             "team_id": "57166",
             "position": "2"
-        },
-        {
-            "player_id": "250089824",
-            "player_name": "Andriy Lunin",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "1"
         },
         {
             "player_id": "250092185",
@@ -4108,92 +2363,8 @@
             "position": "1"
         },
         {
-            "player_id": "250112976",
-            "player_name": "Viktor Kornienko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
             "player_id": "250089817",
             "player_name": "Denys Popov",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "1906029",
-            "player_name": "Bogdan Butko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250042636",
-            "player_name": "Mykyta Burda",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "98113",
-            "player_name": "Denys Boyko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "1"
-        },
-        {
-            "player_id": "250112974",
-            "player_name": "Yukhym Konoplia",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250108303",
-            "player_name": "Oleksandr Syrota",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250087118",
-            "player_name": "Valeriy Bondar",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250066783",
-            "player_name": "Vasyl Kravets",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250077966",
-            "player_name": "Eduard Matveyenko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250027756",
-            "player_name": "Igor Plastun",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250077967",
-            "player_name": "Yevgen Cheberko",
-            "team_name": "Ukraine",
-            "team_id": "57166",
-            "position": "2"
-        },
-        {
-            "player_id": "250024138",
-            "player_name": "Artem Shabanov",
             "team_name": "Ukraine",
             "team_id": "57166",
             "position": "2"
@@ -4204,6 +2375,190 @@
             "team_name": "Ukraine",
             "team_id": "57166",
             "position": "3"
+        }
+    ],
+    "127": [
+        {
+            "player_id": "97688",
+            "player_name": "Marcus Berg",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "4"
+        },
+        {
+            "player_id": "250089868",
+            "player_name": "Alexander Isak",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "4"
+        },
+        {
+            "player_id": "250050478",
+            "player_name": "Robin Quaison",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "4"
+        },
+        {
+            "player_id": "250013469",
+            "player_name": "Emil Forsberg",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "250103985",
+            "player_name": "Dejan Kulusevski",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "250024171",
+            "player_name": "Viktor Claesson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "62487",
+            "player_name": "Sebastian Larsson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "102351",
+            "player_name": "Albin Ekdal",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "250110384",
+            "player_name": "Ken Sema",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "250076479",
+            "player_name": "Mattias Svanberg",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "250055905",
+            "player_name": "Victor Lindelof",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "250040953",
+            "player_name": "Kristoffer Olsson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "250090718",
+            "player_name": "Jordan Larsson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "4"
+        },
+        {
+            "player_id": "250024701",
+            "player_name": "Ludwig Augustinsson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "97687",
+            "player_name": "Mikael Lustig",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "99924",
+            "player_name": "Gustav Svensson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "95669",
+            "player_name": "Andreas Granqvist",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "250049713",
+            "player_name": "Robin Olsen",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "1"
+        },
+        {
+            "player_id": "250034742",
+            "player_name": "Filip Helander",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "250121175",
+            "player_name": "Jens-Lys Cajuste",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "3"
+        },
+        {
+            "player_id": "1908319",
+            "player_name": "Pontus Jansson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "250005387",
+            "player_name": "Karl-Johan Johnsson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "1"
+        },
+        {
+            "player_id": "250000108",
+            "player_name": "Kristoffer Nordfeldt",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "1"
+        },
+        {
+            "player_id": "250049881",
+            "player_name": "Emil Krafth",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "1907505",
+            "player_name": "Marcus Danielson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
+        },
+        {
+            "player_id": "1904230",
+            "player_name": "Pierre Bengtsson",
+            "team_name": "Sweden",
+            "team_id": "127",
+            "position": "2"
         }
     ],
     "57451": [
@@ -4236,13 +2591,6 @@
             "position": "3"
         },
         {
-            "player_id": "108421",
-            "player_name": "Fedor Smolov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "4"
-        },
-        {
             "player_id": "250083244",
             "player_name": "Aleksei Miranchuk",
             "team_name": "Russia",
@@ -4264,13 +2612,6 @@
             "position": "3"
         },
         {
-            "player_id": "250066369",
-            "player_name": "Anton Miranchuk",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
             "player_id": "94880",
             "player_name": "Yuri Zhirkov",
             "team_name": "Russia",
@@ -4280,20 +2621,6 @@
         {
             "player_id": "250058763",
             "player_name": "Rifat Zhemaletdinov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
-            "player_id": "250087653",
-            "player_name": "Konstantin Kuchaev",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
-            "player_id": "250001662",
-            "player_name": "Aleksandr Erokhin",
             "team_name": "Russia",
             "team_id": "57451",
             "position": "3"
@@ -4334,46 +2661,11 @@
             "position": "4"
         },
         {
-            "player_id": "250087654",
-            "player_name": "Fedor Chalov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "4"
-        },
-        {
             "player_id": "103984",
             "player_name": "Aleksei Ionov",
             "team_name": "Russia",
             "team_id": "57451",
             "position": "4"
-        },
-        {
-            "player_id": "250088530",
-            "player_name": "Zelimkhan Bakaev",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
-            "player_id": "250072675",
-            "player_name": "Nikolai Komlichenko",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "4"
-        },
-        {
-            "player_id": "250072673",
-            "player_name": "Yuri Gazinski",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
-            "player_id": "250085953",
-            "player_name": "Ilzat Akhmetov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
         },
         {
             "player_id": "250135265",
@@ -4390,29 +2682,8 @@
             "position": "1"
         },
         {
-            "player_id": "250054281",
-            "player_name": "Pavel Mogilevets",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
             "player_id": "250058228",
             "player_name": "Dmitri Barinov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
-            "player_id": "250130544",
-            "player_name": "Reziuan Mirzov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
-        },
-        {
-            "player_id": "250104636",
-            "player_name": "Ivan Oblyakov",
             "team_name": "Russia",
             "team_id": "57451",
             "position": "3"
@@ -4439,13 +2710,6 @@
             "position": "2"
         },
         {
-            "player_id": "250111089",
-            "player_name": "Andrei Lunev",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "1"
-        },
-        {
             "player_id": "1900711",
             "player_name": "Fedor Kudryashov",
             "team_name": "Russia",
@@ -4460,123 +2724,11 @@
             "position": "2"
         },
         {
-            "player_id": "250154967",
-            "player_name": "Ilia Samoshnikov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250008675",
-            "player_name": "Vladislav Ignatyev",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "1905775",
-            "player_name": "Guilherme",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "1"
-        },
-        {
-            "player_id": "1906987",
-            "player_name": "Georgi Schennikov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "108017",
-            "player_name": "Igor Smolnikov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250011533",
-            "player_name": "Sergei Petrov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250011785",
-            "player_name": "Roman Neustadter",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250012866",
-            "player_name": "Ilya Kutepov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250102096",
-            "player_name": "Roman Evgeniev",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "1905332",
-            "player_name": "Soslan Dzhanaev",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "1"
-        },
-        {
-            "player_id": "250014189",
-            "player_name": "Maksim Belyaev",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250085597",
-            "player_name": "Egor Sorokin",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250121884",
-            "player_name": "Yevgeni Chernov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250137327",
-            "player_name": "Dmitri Chistyakov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
-            "player_id": "250111046",
-            "player_name": "Aleksandr Zhirov",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "2"
-        },
-        {
             "player_id": "250090101",
             "player_name": "Matvei Safonov",
             "team_name": "Russia",
             "team_id": "57451",
             "position": "1"
-        },
-        {
-            "player_id": "250129880",
-            "player_name": "Arsen Zakharyan",
-            "team_name": "Russia",
-            "team_id": "57451",
-            "position": "3"
         },
         {
             "player_id": "250116727",
@@ -4616,13 +2768,6 @@
             "position": "4"
         },
         {
-            "player_id": "1908297",
-            "player_name": "Cenk Tosun",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "4"
-        },
-        {
             "player_id": "250050354",
             "player_name": "Kenan Karaman",
             "team_name": "Turkey",
@@ -4637,25 +2782,11 @@
             "position": "3"
         },
         {
-            "player_id": "250121000",
-            "player_name": "Ahmed Kutucu",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
             "player_id": "250062599",
             "player_name": "Enes \u00dcnal",
             "team_name": "Turkey",
             "team_id": "135",
             "position": "4"
-        },
-        {
-            "player_id": "250067387",
-            "player_name": "Deniz Turuc",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
         },
         {
             "player_id": "250118078",
@@ -4679,20 +2810,6 @@
             "position": "3"
         },
         {
-            "player_id": "1907314",
-            "player_name": "Efecan Karaca",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "250154909",
-            "player_name": "Halil Akbunar",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
             "player_id": "250046542",
             "player_name": "Irfan Can Kahveci",
             "team_name": "Turkey",
@@ -4702,27 +2819,6 @@
         {
             "player_id": "250089842",
             "player_name": "Abdulkadir Omur",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "250007621",
-            "player_name": "Yunus Malli",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "250088954",
-            "player_name": "Emre Kilinc",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "1909099",
-            "player_name": "Oguzhan Ozyakup",
             "team_name": "Turkey",
             "team_id": "135",
             "position": "3"
@@ -4754,62 +2850,6 @@
             "team_name": "Turkey",
             "team_id": "135",
             "position": "3"
-        },
-        {
-            "player_id": "250146674",
-            "player_name": "Muhammed Kerem Akturkoglu",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "250132927",
-            "player_name": "Abdulkadir Parmak",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "250077695",
-            "player_name": "Berkay Ozcan",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "1905190",
-            "player_name": "Gokhan Gonul",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "98804",
-            "player_name": "Caner Erkin",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250005715",
-            "player_name": "Mahmut Tekdemir",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "3"
-        },
-        {
-            "player_id": "250155399",
-            "player_name": "Enis Destan",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "4"
-        },
-        {
-            "player_id": "250087936",
-            "player_name": "Guven Yalcin",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "4"
         },
         {
             "player_id": "250112811",
@@ -4868,69 +2908,6 @@
             "position": "2"
         },
         {
-            "player_id": "250042579",
-            "player_name": "Emre Tasdemir",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250010557",
-            "player_name": "Omer Bayram",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250009001",
-            "player_name": "Hasan Ali Kaldirim",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "1901684",
-            "player_name": "Serdar Aziz",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250028972",
-            "player_name": "Alpaslan Ozturk",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250130545",
-            "player_name": "Nazim Sangare",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250123437",
-            "player_name": "Mert Cetin",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250128047",
-            "player_name": "Bunyamin Balci",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
-            "player_id": "250043129",
-            "player_name": "Abdulkerim Bardakci",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
             "player_id": "250107375",
             "player_name": "Altay Bayindir",
             "team_name": "Turkey",
@@ -4938,25 +2915,11 @@
             "position": "1"
         },
         {
-            "player_id": "250064630",
-            "player_name": "Ertugrul Ersoy",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "2"
-        },
-        {
             "player_id": "250108732",
             "player_name": "Ridvan Yilmaz",
             "team_name": "Turkey",
             "team_id": "135",
             "position": "2"
-        },
-        {
-            "player_id": "250053635",
-            "player_name": "Gokhan Akkan",
-            "team_name": "Turkey",
-            "team_id": "135",
-            "position": "1"
         }
     ],
     "128": [
@@ -5010,13 +2973,6 @@
             "position": "3"
         },
         {
-            "player_id": "250017664",
-            "player_name": "Josip Drmic",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "4"
-        },
-        {
             "player_id": "250110901",
             "player_name": "Christian Fassnacht",
             "team_name": "Switzerland",
@@ -5024,29 +2980,8 @@
             "position": "3"
         },
         {
-            "player_id": "250064273",
-            "player_name": "Cedric Itten",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "4"
-        },
-        {
             "player_id": "250004721",
             "player_name": "Granit Xhaka",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "3"
-        },
-        {
-            "player_id": "250055748",
-            "player_name": "Albian Ajeti",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "4"
-        },
-        {
-            "player_id": "250060817",
-            "player_name": "Renato Steffen",
             "team_name": "Switzerland",
             "team_id": "128",
             "position": "3"
@@ -5071,13 +3006,6 @@
             "team_name": "Switzerland",
             "team_id": "128",
             "position": "2"
-        },
-        {
-            "player_id": "250017994",
-            "player_name": "Pajtim Kasami",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "3"
         },
         {
             "player_id": "250046574",
@@ -5110,27 +3038,6 @@
         {
             "player_id": "250086789",
             "player_name": "Edimilson Fernandes",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "3"
-        },
-        {
-            "player_id": "250125538",
-            "player_name": "Dan Ndoye",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "4"
-        },
-        {
-            "player_id": "250099399",
-            "player_name": "Michel Aebischer",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "3"
-        },
-        {
-            "player_id": "250108706",
-            "player_name": "Simon Sohm",
             "team_name": "Switzerland",
             "team_id": "128",
             "position": "3"
@@ -5185,34 +3092,6 @@
             "position": "2"
         },
         {
-            "player_id": "250079367",
-            "player_name": "Andi Zeqiri",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "4"
-        },
-        {
-            "player_id": "250040432",
-            "player_name": "Francois Moubandje",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "2"
-        },
-        {
-            "player_id": "1905346",
-            "player_name": "Michael Lang",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "2"
-        },
-        {
-            "player_id": "250021927",
-            "player_name": "Timm Klose",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "2"
-        },
-        {
             "player_id": "250091355",
             "player_name": "Jordan Lotomba",
             "team_name": "Switzerland",
@@ -5225,13 +3104,6 @@
             "team_name": "Switzerland",
             "team_id": "128",
             "position": "2"
-        },
-        {
-            "player_id": "250069832",
-            "player_name": "Gregor Kobel",
-            "team_name": "Switzerland",
-            "team_id": "128",
-            "position": "1"
         }
     ],
     "58837": [
@@ -5255,13 +3127,6 @@
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "3"
-        },
-        {
-            "player_id": "250081204",
-            "player_name": "Vaclav Cerny",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "4"
         },
         {
             "player_id": "250092717",
@@ -5299,36 +3164,8 @@
             "position": "4"
         },
         {
-            "player_id": "250064811",
-            "player_name": "Lukas Provod",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250008489",
-            "player_name": "Stanislav Tecl",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "4"
-        },
-        {
             "player_id": "150296281",
             "player_name": "Lukas Masopust",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250001444",
-            "player_name": "Radim Breite",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250014601",
-            "player_name": "Ladislav Krejci",
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "3"
@@ -5341,57 +3178,8 @@
             "position": "3"
         },
         {
-            "player_id": "98910",
-            "player_name": "Borek Dockal",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250097498",
-            "player_name": "Michal Sacek",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250006513",
-            "player_name": "Martin Dolezal",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "4"
-        },
-        {
             "player_id": "250081964",
             "player_name": "Jakub Jankto",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250027767",
-            "player_name": "Zdenek Ondrasek",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "4"
-        },
-        {
-            "player_id": "250022366",
-            "player_name": "David Pavelka",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250099917",
-            "player_name": "Tomas Malinsky",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
-        },
-        {
-            "player_id": "250034779",
-            "player_name": "Jan Kopic",
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "3"
@@ -5409,13 +3197,6 @@
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "4"
-        },
-        {
-            "player_id": "250077922",
-            "player_name": "Ondrej Lingr",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "3"
         },
         {
             "player_id": "250061048",
@@ -5439,22 +3220,8 @@
             "position": "2"
         },
         {
-            "player_id": "250059119",
-            "player_name": "Patrizio Stronati",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "2"
-        },
-        {
             "player_id": "250000900",
             "player_name": "Ondrej Celustka",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "2"
-        },
-        {
-            "player_id": "250008358",
-            "player_name": "Filip Novak",
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "2"
@@ -5465,13 +3232,6 @@
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "1"
-        },
-        {
-            "player_id": "74487",
-            "player_name": "Ondrej Kudela",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "2"
         },
         {
             "player_id": "250055105",
@@ -5490,13 +3250,6 @@
         {
             "player_id": "250124916",
             "player_name": "David Zima",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "2"
-        },
-        {
-            "player_id": "59130",
-            "player_name": "Roman Hubnik",
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "2"
@@ -5523,46 +3276,11 @@
             "position": "3"
         },
         {
-            "player_id": "250057735",
-            "player_name": "David Hovorka",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "2"
-        },
-        {
             "player_id": "250077931",
             "player_name": "Michal Sadilek",
             "team_name": "Czech Republic",
             "team_id": "58837",
             "position": "3"
-        },
-        {
-            "player_id": "250121922",
-            "player_name": "Vaclav Jemelka",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "2"
-        },
-        {
-            "player_id": "250052788",
-            "player_name": "Ondrej Kolar",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "1"
-        },
-        {
-            "player_id": "250023590",
-            "player_name": "Tomas Koubek",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "1"
-        },
-        {
-            "player_id": "250146916",
-            "player_name": "Tomas Petrasek",
-            "team_name": "Czech Republic",
-            "team_id": "58837",
-            "position": "2"
         },
         {
             "player_id": "250045608",
@@ -5579,13 +3297,6 @@
             "team_name": "Austria",
             "team_id": "8",
             "position": "3"
-        },
-        {
-            "player_id": "250142147",
-            "player_name": "Ercan Kara",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "4"
         },
         {
             "player_id": "250116789",
@@ -5616,27 +3327,6 @@
             "position": "3"
         },
         {
-            "player_id": "250073925",
-            "player_name": "Thomas Goiginger",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250121917",
-            "player_name": "Philipp Wiesinger",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250019573",
-            "player_name": "Gernot Trauner",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
             "player_id": "250050403",
             "player_name": "Alessandro Schopf",
             "team_name": "Austria",
@@ -5651,36 +3341,8 @@
             "position": "3"
         },
         {
-            "player_id": "250098107",
-            "player_name": "Christoph Monschein",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "4"
-        },
-        {
             "player_id": "250052757",
             "player_name": "Valentino Lazaro",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250055891",
-            "player_name": "Adrian Grbic",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "4"
-        },
-        {
-            "player_id": "250126500",
-            "player_name": "Husein Balic",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250126759",
-            "player_name": "Yusuf Demir",
             "team_name": "Austria",
             "team_id": "8",
             "position": "3"
@@ -5702,55 +3364,6 @@
         {
             "player_id": "98843",
             "player_name": "Julian Baumgartlinger",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250105714",
-            "player_name": "Dejan Ljubicic",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "103356",
-            "player_name": "Jakob Jantscher",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "150015261",
-            "player_name": "Stefan Schwab",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "1906553",
-            "player_name": "Stefan Hierlander",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250061064",
-            "player_name": "Reinhold Ranftl",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250013649",
-            "player_name": "Peter Zulj",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
-            "player_id": "250013339",
-            "player_name": "Raphael Holzhauser",
             "team_name": "Austria",
             "team_id": "8",
             "position": "3"
@@ -5784,29 +3397,8 @@
             "position": "3"
         },
         {
-            "player_id": "250020929",
-            "player_name": "Florian Kainz",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "3"
-        },
-        {
             "player_id": "250073627",
             "player_name": "Philipp Lienhart",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "2"
-        },
-        {
-            "player_id": "250001968",
-            "player_name": "Heinz Lindner",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "1"
-        },
-        {
-            "player_id": "250081701",
-            "player_name": "Maximilian Wober",
             "team_name": "Austria",
             "team_id": "8",
             "position": "2"
@@ -5875,43 +3467,8 @@
             "position": "2"
         },
         {
-            "player_id": "250040460",
-            "player_name": "Jorg Siebenhandl",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "1"
-        },
-        {
-            "player_id": "250024344",
-            "player_name": "Philipp Mwene",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "2"
-        },
-        {
-            "player_id": "250016674",
-            "player_name": "Richard Strebinger",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "1"
-        },
-        {
-            "player_id": "250063396",
-            "player_name": "Cican Stankovic",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "1"
-        },
-        {
             "player_id": "250065419",
             "player_name": "Stefan Posch",
-            "team_name": "Austria",
-            "team_id": "8",
-            "position": "2"
-        },
-        {
-            "player_id": "250150924",
-            "player_name": "David Nemeth",
             "team_name": "Austria",
             "team_id": "8",
             "position": "2"
@@ -5940,22 +3497,8 @@
             "position": "3"
         },
         {
-            "player_id": "250022945",
-            "player_name": "Albert Rusnak",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
             "player_id": "250055981",
             "player_name": "Ondrej Duda",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
-            "player_id": "102152",
-            "player_name": "Miroslav Stoch",
             "team_name": "Slovakia",
             "team_id": "58836",
             "position": "3"
@@ -5977,13 +3520,6 @@
         {
             "player_id": "107472",
             "player_name": "Michal Duris",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "4"
-        },
-        {
-            "player_id": "250108215",
-            "player_name": "David Strelec",
             "team_name": "Slovakia",
             "team_id": "58836",
             "position": "4"
@@ -6017,13 +3553,6 @@
             "position": "3"
         },
         {
-            "player_id": "250041551",
-            "player_name": "Matus Bero",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
             "player_id": "250043185",
             "player_name": "Patrik Hrosovsky",
             "team_name": "Slovakia",
@@ -6036,34 +3565,6 @@
             "team_name": "Slovakia",
             "team_id": "58836",
             "position": "4"
-        },
-        {
-            "player_id": "250059165",
-            "player_name": "Adam Zrelak",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "4"
-        },
-        {
-            "player_id": "250029756",
-            "player_name": "Erik Sabo",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
-            "player_id": "250065026",
-            "player_name": "Samuel Mraz",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
-            "player_id": "250022941",
-            "player_name": "Jaroslav Mihalik",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
         },
         {
             "player_id": "67750",
@@ -6080,20 +3581,6 @@
             "position": "2"
         },
         {
-            "player_id": "65030",
-            "player_name": "Martin Skrtel",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
-            "player_id": "250083363",
-            "player_name": "Erik Jirka",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
             "player_id": "250065028",
             "player_name": "Laszlo Benes",
             "team_name": "Slovakia",
@@ -6106,34 +3593,6 @@
             "team_name": "Slovakia",
             "team_id": "58836",
             "position": "3"
-        },
-        {
-            "player_id": "250114171",
-            "player_name": "Peter Pokorny",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
-            "player_id": "250066372",
-            "player_name": "Martin Chrien",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "3"
-        },
-        {
-            "player_id": "250088634",
-            "player_name": "Pavol Safranko",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "4"
-        },
-        {
-            "player_id": "250058729",
-            "player_name": "Nikolas Spalek",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "4"
         },
         {
             "player_id": "1904029",
@@ -6164,13 +3623,6 @@
             "position": "1"
         },
         {
-            "player_id": "250042822",
-            "player_name": "Jakub Holubek",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
             "player_id": "95711",
             "player_name": "Tomas Hubocan",
             "team_name": "Slovakia",
@@ -6180,13 +3632,6 @@
         {
             "player_id": "250058731",
             "player_name": "Denis Vavro",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
-            "player_id": "250004993",
-            "player_name": "Norbert Gyomber",
             "team_name": "Slovakia",
             "team_id": "58836",
             "position": "2"
@@ -6211,55 +3656,6 @@
             "team_name": "Slovakia",
             "team_id": "58836",
             "position": "2"
-        },
-        {
-            "player_id": "250004986",
-            "player_name": "Lukas Pauschek",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
-            "player_id": "250026925",
-            "player_name": "Robert Mazan",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
-            "player_id": "250055983",
-            "player_name": "Branislav Ninaj",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
-            "player_id": "250011256",
-            "player_name": "Frantisek Plach",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "1"
-        },
-        {
-            "player_id": "250073353",
-            "player_name": "Boris Sekulic",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
-            "player_id": "1906248",
-            "player_name": "Lukas Stetina",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "2"
-        },
-        {
-            "player_id": "250084109",
-            "player_name": "Dominik Greif",
-            "team_name": "Slovakia",
-            "team_id": "58836",
-            "position": "1"
         }
     ],
     "117": [
@@ -6276,13 +3672,6 @@
             "team_name": "Scotland",
             "team_id": "117",
             "position": "3"
-        },
-        {
-            "player_id": "250090708",
-            "player_name": "Oliver Burke",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "4"
         },
         {
             "player_id": "250147581",
@@ -6306,13 +3695,6 @@
             "position": "3"
         },
         {
-            "player_id": "250005650",
-            "player_name": "Leigh Griffiths",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "4"
-        },
-        {
             "player_id": "250155055",
             "player_name": "Che Adams",
             "team_name": "Scotland",
@@ -6327,13 +3709,6 @@
             "position": "3"
         },
         {
-            "player_id": "73894",
-            "player_name": "Steven Fletcher",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "4"
-        },
-        {
             "player_id": "1909868",
             "player_name": "James Forrest",
             "team_name": "Scotland",
@@ -6346,13 +3721,6 @@
             "team_name": "Scotland",
             "team_id": "117",
             "position": "3"
-        },
-        {
-            "player_id": "250081937",
-            "player_name": "Oli McBurnie",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "4"
         },
         {
             "player_id": "250141857",
@@ -6383,41 +3751,6 @@
             "position": "3"
         },
         {
-            "player_id": "250005085",
-            "player_name": "Ryan Jack",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "3"
-        },
-        {
-            "player_id": "250071574",
-            "player_name": "Lawrence Shankland",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "4"
-        },
-        {
-            "player_id": "250053754",
-            "player_name": "Callum Paterson",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "4"
-        },
-        {
-            "player_id": "250023609",
-            "player_name": "Kenny McLean",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "3"
-        },
-        {
-            "player_id": "1909871",
-            "player_name": "Tom Cairney",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "3"
-        },
-        {
             "player_id": "250013301",
             "player_name": "Grant Hanley",
             "team_name": "Scotland",
@@ -6441,20 +3774,6 @@
         {
             "player_id": "250107117",
             "player_name": "Billy Gilmour",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "3"
-        },
-        {
-            "player_id": "250081935",
-            "player_name": "Eamonn Brophy",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "4"
-        },
-        {
-            "player_id": "1901598",
-            "player_name": "Gary Mackay-Steven",
             "team_name": "Scotland",
             "team_id": "117",
             "position": "3"
@@ -6509,74 +3828,11 @@
             "position": "2"
         },
         {
-            "player_id": "250017906",
-            "player_name": "Liam Palmer",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
-        },
-        {
-            "player_id": "250040243",
-            "player_name": "Graeme Shinnie",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
-        },
-        {
-            "player_id": "98678",
-            "player_name": "Andrew Considine",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
-        },
-        {
             "player_id": "250118480",
             "player_name": "Jon McLaughlin",
             "team_name": "Scotland",
             "team_id": "117",
             "position": "1"
-        },
-        {
-            "player_id": "250077780",
-            "player_name": "Ross McCrorie",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
-        },
-        {
-            "player_id": "250065193",
-            "player_name": "Robby McCrorie",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "1"
-        },
-        {
-            "player_id": "250147135",
-            "player_name": "Paul McGinn",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
-        },
-        {
-            "player_id": "250107074",
-            "player_name": "Ryan Porteous",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
-        },
-        {
-            "player_id": "250056853",
-            "player_name": "John Souttar",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
-        },
-        {
-            "player_id": "1907846",
-            "player_name": "Paul Hanlon",
-            "team_name": "Scotland",
-            "team_id": "117",
-            "position": "2"
         },
         {
             "player_id": "250107124",
@@ -6672,20 +3928,6 @@
             "position": "3"
         },
         {
-            "player_id": "250112142",
-            "player_name": "Rasmus Karjalainen",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "4"
-        },
-        {
-            "player_id": "12695",
-            "player_name": "Lasse Karjalainen",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "3"
-        },
-        {
             "player_id": "250067358",
             "player_name": "Robert Taylor",
             "team_name": "Finland",
@@ -6695,27 +3937,6 @@
         {
             "player_id": "250007328",
             "player_name": "Nikolai Alho",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "3"
-        },
-        {
-            "player_id": "250091256",
-            "player_name": "Benjamin Kallman",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "4"
-        },
-        {
-            "player_id": "250090754",
-            "player_name": "Jasse Tuominen",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "4"
-        },
-        {
-            "player_id": "250066694",
-            "player_name": "Ilmari Niskanen",
             "team_name": "Finland",
             "team_id": "42",
             "position": "3"
@@ -6742,36 +3963,8 @@
             "position": "2"
         },
         {
-            "player_id": "250134006",
-            "player_name": "Jasin Assehnoun",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "3"
-        },
-        {
-            "player_id": "250098154",
-            "player_name": "Albin Granlund",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "2"
-        },
-        {
             "player_id": "250016664",
             "player_name": "Thomas Lam",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "2"
-        },
-        {
-            "player_id": "1907596",
-            "player_name": "Juhani Ojala",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "2"
-        },
-        {
-            "player_id": "250090740",
-            "player_name": "Nicholas Hamalainen",
             "team_name": "Finland",
             "team_id": "42",
             "position": "2"
@@ -6791,32 +3984,11 @@
             "position": "2"
         },
         {
-            "player_id": "71713",
-            "player_name": "Niki Maenpaa",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "1"
-        },
-        {
             "player_id": "250005371",
             "player_name": "Paulus Arajuuri",
             "team_name": "Finland",
             "team_id": "42",
             "position": "2"
-        },
-        {
-            "player_id": "250001599",
-            "player_name": "Juha Pirinen",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "2"
-        },
-        {
-            "player_id": "250042305",
-            "player_name": "Carljohan Eriksson",
-            "team_name": "Finland",
-            "team_id": "42",
-            "position": "1"
         },
         {
             "player_id": "250088721",
@@ -6863,13 +4035,6 @@
             "position": "4"
         },
         {
-            "player_id": "1903810",
-            "player_name": "Ilija Nestorovski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "4"
-        },
-        {
             "player_id": "73471",
             "player_name": "Ivan Trickovski",
             "team_name": "North Macedonia",
@@ -6879,13 +4044,6 @@
         {
             "player_id": "52148",
             "player_name": "Goran Pandev",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "4"
-        },
-        {
-            "player_id": "96415",
-            "player_name": "Agim Ibraimi",
             "team_name": "North Macedonia",
             "team_id": "59205",
             "position": "4"
@@ -6968,27 +4126,6 @@
             "position": "3"
         },
         {
-            "player_id": "250001787",
-            "player_name": "Dusko Trajcevski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "3"
-        },
-        {
-            "player_id": "250083763",
-            "player_name": "Ennur Totre",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "3"
-        },
-        {
-            "player_id": "250071640",
-            "player_name": "Ljupche Doriev",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "4"
-        },
-        {
             "player_id": "250043103",
             "player_name": "Boban Nikolov",
             "team_name": "North Macedonia",
@@ -6996,46 +4133,11 @@
             "position": "3"
         },
         {
-            "player_id": "250004361",
-            "player_name": "Stefan Askovski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "2"
-        },
-        {
             "player_id": "250072833",
             "player_name": "Milan Ristovski",
             "team_name": "North Macedonia",
             "team_id": "59205",
             "position": "4"
-        },
-        {
-            "player_id": "250059646",
-            "player_name": "Gjorgji Stoilov",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "3"
-        },
-        {
-            "player_id": "250004368",
-            "player_name": "Darko Micevski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "3"
-        },
-        {
-            "player_id": "250042659",
-            "player_name": "Kire Markoski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "4"
-        },
-        {
-            "player_id": "250068980",
-            "player_name": "Nikola Gjorgjev",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "3"
         },
         {
             "player_id": "250022910",
@@ -7073,27 +4175,6 @@
             "position": "2"
         },
         {
-            "player_id": "250059629",
-            "player_name": "Kristijan Tosevski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "2"
-        },
-        {
-            "player_id": "250102251",
-            "player_name": "Agron Rufati",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "2"
-        },
-        {
-            "player_id": "94621",
-            "player_name": "Martin Bogatinov",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "1"
-        },
-        {
             "player_id": "107972",
             "player_name": "Kire Ristevski",
             "team_name": "North Macedonia",
@@ -7122,20 +4203,6 @@
             "position": "1"
         },
         {
-            "player_id": "250137445",
-            "player_name": "Mario Mladenovski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "2"
-        },
-        {
-            "player_id": "250028269",
-            "player_name": "Tome Kitanovski",
-            "team_name": "North Macedonia",
-            "team_id": "59205",
-            "position": "2"
-        },
-        {
             "player_id": "250031589",
             "player_name": "Gjoko Zajkov",
             "team_name": "North Macedonia",
@@ -7150,13 +4217,6 @@
             "team_name": "Hungary",
             "team_id": "57",
             "position": "4"
-        },
-        {
-            "player_id": "250104066",
-            "player_name": "Dominik Szoboszlai",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "3"
         },
         {
             "player_id": "250118293",
@@ -7215,60 +4275,11 @@
             "position": "3"
         },
         {
-            "player_id": "250041236",
-            "player_name": "Zsolt Kalmar",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "3"
-        },
-        {
-            "player_id": "250007939",
-            "player_name": "Krisztian Simon",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "4"
-        },
-        {
-            "player_id": "250037921",
-            "player_name": "Norbert Konyves",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "4"
-        },
-        {
-            "player_id": "250143314",
-            "player_name": "Adrian Szoke",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "4"
-        },
-        {
-            "player_id": "250032152",
-            "player_name": "Adam Gyurcso",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "4"
-        },
-        {
             "player_id": "250115077",
             "player_name": "Andras Schafer",
             "team_name": "Hungary",
             "team_id": "57",
             "position": "3"
-        },
-        {
-            "player_id": "250143315",
-            "player_name": "Benjamin Babati",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "4"
-        },
-        {
-            "player_id": "250098325",
-            "player_name": "Krisztian Geresi",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "4"
         },
         {
             "player_id": "250104064",
@@ -7283,13 +4294,6 @@
             "team_name": "Hungary",
             "team_id": "57",
             "position": "4"
-        },
-        {
-            "player_id": "1904067",
-            "player_name": "Mate Patkai",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "3"
         },
         {
             "player_id": "250056177",
@@ -7348,13 +4352,6 @@
             "position": "2"
         },
         {
-            "player_id": "250087779",
-            "player_name": "Balazs Toth",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "1"
-        },
-        {
             "player_id": "250027818",
             "player_name": "Adam Lang",
             "team_name": "Hungary",
@@ -7369,60 +4366,11 @@
             "position": "2"
         },
         {
-            "player_id": "250010491",
-            "player_name": "Mihaly Korhut",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "2"
-        },
-        {
-            "player_id": "1906332",
-            "player_name": "Adam Kovacsik",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "1"
-        },
-        {
-            "player_id": "250007242",
-            "player_name": "Botond Barath",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "2"
-        },
-        {
-            "player_id": "250022881",
-            "player_name": "Barnabas Bese",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "2"
-        },
-        {
-            "player_id": "250056894",
-            "player_name": "Szilveszter Hangya",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "2"
-        },
-        {
-            "player_id": "73851",
-            "player_name": "Lajos Hegedus",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "1"
-        },
-        {
             "player_id": "103039",
             "player_name": "Adam Bogdan",
             "team_name": "Hungary",
             "team_id": "57",
             "position": "1"
-        },
-        {
-            "player_id": "250047060",
-            "player_name": "Csaba Spandler",
-            "team_name": "Hungary",
-            "team_id": "57",
-            "position": "2"
         },
         {
             "player_id": "250110986",
