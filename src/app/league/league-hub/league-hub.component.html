@@ -1,44 +1,75 @@
-<section class = "container-fluid" *ngIf="league$ | async as L">
-    <h3 class="row">League Hub for {{L.name}}</h3>
-    <!-- <ngb-alert class="row" [dismissible]="false" type="info">Current Status : {{ status?.toUpperCase() }}</ngb-alert> -->
-    <section class="row">
-        <app-my-squad class="col-12 col-md-4 my-2" [leagueId]="L.leagueId"></app-my-squad>
-        <div class="col-12 col-md-4">
-            <app-league-member-table [league]="L" [leagueMembers$]="leagueMembers$">
-            </app-league-member-table>
-            <div class="card border-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header bg-dark"><h5 class="text-white">Team Report</h5></div>
-                <div class="card-body">
-                    <p class="card-text">You own <strong>{{ squadSize$ | async}} Players</strong> and have <strong>{{(money$ | async) | currency:'GBP':'symbol':'1.0-1'}}M</strong> remaining.
-                        You can see already acquired <strong>Players</strong> under <strong>My Squad</strong>.
-                    </p>
-                </div>
-            </div>
+<section class="container-fluid" *ngIf="league$ | async as L">
+  <h3 class="row">League Hub for {{ L.name }}</h3>
+  <!-- <ngb-alert class="row" [dismissible]="false" type="info">Current Status : {{ status?.toUpperCase() }}</ngb-alert> -->
+  <section class="row">
+    <app-my-squad
+      class="col-12 col-md-4 my-2"
+      [leagueId]="L.leagueId"
+    ></app-my-squad>
+    <div class="col-12 col-md-4">
+      <app-league-member-table [league]="L" [leagueMembers$]="leagueMembers$">
+      </app-league-member-table>
+      <div class="card border-dark mb-3" style="max-width: 18rem">
+        <div class="card-header bg-dark">
+          <h5 class="text-white">Team Report</h5>
         </div>
-        <section class="col-12 col-md-4 mb-3">
-            <div class="d-flex flex-column">
-                <ul ngbNav #nav="ngbNav" class="nav-pills dark">
-                    <li ngbNavItem>
-                        <a ngbNavLink>{{ BID_CART_TITLE }}</a>
-                        <ng-template ngbNavContent>
-                            <app-bid-cart [leagueKey]="L.leagueId"></app-bid-cart>
-                        </ng-template>
-                    </li>
-                    <li ngbNavItem>
-                        <a ngbNavLink>{{ BID_HISTORY_TITLE }}</a>
-                        <ng-template ngbNavContent>
-                            <app-bid-history [leagueId]="L.leagueId"></app-bid-history>
-                        </ng-template>
-                    </li>
-                </ul>
-                <div [ngbNavOutlet]="nav"></div>
-            </div>
-        </section>
-    </section>
-    <button *ngIf="allWait && isAdmin" class="btn btn-info my-md-3" (click)="resolveBids(L.leagueId)">Resolve Bids</button>
-    <button *ngIf="canBid" [attr.aria-expanded]="!isOpen" class="btn btn-primary" (click)="isOpen = !isOpen" aria-controls="collapseExample">Player Pool</button>
-    <hr>
-    <div id="collapseExample" [ngbCollapse]="isOpen || !canBid">
-        <app-league-pool></app-league-pool>
+        <div class="card-body">
+          <p class="card-text">
+            You own <strong>{{ squadSize$ | async }} Players</strong> and have
+            <strong
+              >{{ money$ | async | currency: "GBP":"symbol":"1.0-1" }}M</strong
+            >
+            remaining. You can see already acquired
+            <strong>Players</strong> under <strong>My Squad</strong>.
+          </p>
+        </div>
+      </div>
     </div>
+    <section class="col-12 col-md-4 mb-3">
+      <div class="d-flex flex-column">
+        <ul ngbNav #nav="ngbNav" class="nav-pills dark">
+          <li ngbNavItem>
+            <a ngbNavLink>{{ BID_CART_TITLE }}</a>
+            <ng-template ngbNavContent>
+              <app-bid-cart [leagueKey]="L.leagueId"></app-bid-cart>
+            </ng-template>
+          </li>
+          <li ngbNavItem>
+            <a ngbNavLink>{{ BID_HISTORY_TITLE }}</a>
+            <ng-template ngbNavContent>
+              <app-bid-history [leagueId]="L.leagueId"></app-bid-history>
+            </ng-template>
+          </li>
+        </ul>
+        <div [ngbNavOutlet]="nav"></div>
+      </div>
+    </section>
+  </section>
+  <button
+    *ngIf="allWait && isAdmin"
+    class="btn btn-info my-md-3"
+    (click)="resolveBids(L.leagueId)"
+  >
+    Resolve Bids
+  </button>
+  <button
+    *ngIf="isAahir$ | async"
+    class="btn btn-danger my-md-3"
+    (click)="revokeBids(L.leagueId)"
+  >
+    Revoke Bids
+  </button>
+  <button
+    *ngIf="canBid"
+    [attr.aria-expanded]="!isOpen"
+    class="btn btn-primary"
+    (click)="isOpen = !isOpen"
+    aria-controls="collapseExample"
+  >
+    Player Pool
+  </button>
+  <hr />
+  <div id="collapseExample" [ngbCollapse]="isOpen || !canBid">
+    <app-league-pool></app-league-pool>
+  </div>
 </section>
